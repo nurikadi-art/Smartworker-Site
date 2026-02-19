@@ -2,10 +2,10 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SmartWorker — Remote Work with US Companies | Training System</title>
-<meta name="description" content="Learn to work remotely with American companies. No experience, no degree, no IELTS required. Start your online career with SmartWorker team support.">
-<meta name="keywords" content="remote work, work for US, work with American companies, remote work training, remote work no experience, online work, SmartWorker, work from home">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<title>SmartWorker — Удалённая работа с компаниями из США</title>
+<meta name="description" content="Обучаем удалённой работе с американскими компаниями. Без опыта, без диплома и без IELTS. Начни карьеру онлайн с поддержкой команды SmartWorker.">
+<meta name="keywords" content="удалённая работа, работа на США, работа с американскими компаниями, обучение удалённой работе, удалённая работа без опыта, онлайн-работа, SmartWorker, работа из дома">
 <meta name="author" content="SmartWorker">
 <link rel="icon" href="https://storage.googleapis.com/msgsndr/mk59cRoNiTQPsvDY71Gj/media/68f7dc075d0f4e0f537408cc.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,11 +13,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;font-size:16px}
-body{font-family:'Inter',sans-serif;background:#0A0F1C;color:#fff;line-height:1.7;overflow-x:hidden}
+html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:'Inter',sans-serif;background:#0A0F1C;color:#fff;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 
-/* === UTILITY === */
-.container{max-width:1100px;margin:0 auto;padding:0 24px}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
 .text-center{text-align:center}
 .text-gold{color:#FFD642}
 .text-green{color:#37ca37}
@@ -25,485 +24,462 @@ body{font-family:'Inter',sans-serif;background:#0A0F1C;color:#fff;line-height:1.
 .text-muted{color:#8893A8}
 .text-white{color:#fff}
 
-/* === TYPOGRAPHY === */
-h1,h2,h3,h4,h5{font-family:'Inter Tight',sans-serif;font-weight:700;line-height:1.2}
-h1{font-size:clamp(2.2rem,5vw,3.8rem);letter-spacing:-0.02em}
-h2{font-size:clamp(1.8rem,4vw,2.8rem);letter-spacing:-0.01em}
-h3{font-size:clamp(1.3rem,3vw,1.8rem)}
-h4{font-size:clamp(1.1rem,2vw,1.4rem)}
-p{font-size:1.05rem;color:#c4cdd9}
+h1,h2,h3,h4,h5{font-family:'Inter Tight',sans-serif;font-weight:700;line-height:1.15}
+h1{font-size:clamp(1.9rem,5vw,3.6rem);letter-spacing:-0.03em}
+h2{font-size:clamp(1.6rem,4vw,2.6rem);letter-spacing:-0.02em}
+h3{font-size:clamp(1.2rem,3vw,1.7rem)}
+h4{font-size:clamp(1.05rem,2vw,1.35rem)}
+p{font-size:clamp(0.95rem,2.5vw,1.05rem);color:#c4cdd9}
 
 .gradient-text{background:linear-gradient(135deg,#FFD642 0%,#37ca37 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.gradient-text-blue{background:linear-gradient(135deg,#188bf6 0%,#37ca37 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 
 /* === BUTTONS === */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:18px 40px;border-radius:60px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:1.05rem;text-decoration:none;cursor:pointer;border:none;transition:all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);position:relative;overflow:hidden}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:18px 36px;border-radius:60px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:clamp(0.9rem,2.5vw,1.05rem);text-decoration:none;cursor:pointer;border:none;transition:all 0.4s cubic-bezier(.25,.46,.45,.94);position:relative;overflow:hidden;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
 .btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent);transition:left 0.5s}
 .btn:hover::before{left:100%}
-.btn-primary{background:linear-gradient(135deg,#FFD642 0%,#f0c030 100%);color:#0A0F1C;box-shadow:0 4px 30px rgba(255,214,66,0.3)}
+.btn-primary{background:linear-gradient(135deg,#FFD642,#f0c030);color:#0A0F1C;box-shadow:0 4px 30px rgba(255,214,66,0.3)}
 .btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 40px rgba(255,214,66,0.5)}
 .btn-secondary{background:transparent;color:#FFD642;border:2px solid #FFD642}
 .btn-secondary:hover{background:#FFD642;color:#0A0F1C;transform:translateY(-3px)}
-.btn-green{background:linear-gradient(135deg,#37ca37 0%,#2db82d 100%);color:#fff;box-shadow:0 4px 30px rgba(55,202,55,0.3)}
+.btn-green{background:linear-gradient(135deg,#37ca37,#2db82d);color:#fff;box-shadow:0 4px 30px rgba(55,202,55,0.3)}
 .btn-green:hover{transform:translateY(-3px);box-shadow:0 8px 40px rgba(55,202,55,0.5)}
 .btn-glow{animation:btnGlow 3s ease-in-out infinite}
 @keyframes btnGlow{0%,100%{box-shadow:0 4px 30px rgba(255,214,66,0.3)}50%{box-shadow:0 4px 50px rgba(255,214,66,0.6)}}
 
-/* === SECTIONS === */
-section{padding:100px 0;position:relative}
+section{padding:90px 0;position:relative}
 .section-dark{background:#0A0F1C}
-.section-darker{background:#070B15}
 .section-navy{background:#0E182C}
-.section-gradient{background:linear-gradient(180deg,#0E182C 0%,#0A0F1C 100%)}
+.section-gradient{background:linear-gradient(180deg,#0E182C,#0A0F1C)}
 
-/* === ANIMATED BACKGROUND === */
 .bg-grid{position:absolute;top:0;left:0;width:100%;height:100%;background-image:linear-gradient(rgba(255,214,66,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,214,66,0.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
-.bg-glow{position:absolute;border-radius:50%;filter:blur(120px);pointer-events:none;opacity:0.15}
-.bg-glow-gold{background:#FFD642;width:500px;height:500px}
-.bg-glow-green{background:#37ca37;width:400px;height:400px}
-.bg-glow-blue{background:#188bf6;width:450px;height:450px}
+.bg-glow{position:absolute;border-radius:50%;filter:blur(120px);pointer-events:none;opacity:0.12}
+.bg-glow-gold{background:#FFD642;width:400px;height:400px}
+.bg-glow-green{background:#37ca37;width:350px;height:350px}
+
+/* === TEXT LOGO === */
+.text-logo{font-family:'Inter Tight',sans-serif;font-weight:900;font-size:clamp(1.6rem,4vw,2.2rem);letter-spacing:-0.03em;margin-bottom:28px;display:inline-block}
+.text-logo .smart{color:#fff}
+.text-logo .worker{color:#FFD642}
 
 /* === HERO === */
-.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:120px 0 100px}
+.hero{min-height:100vh;min-height:100dvh;display:flex;align-items:center;position:relative;overflow:hidden;padding:100px 0 80px}
 .hero .bg-glow-gold{top:-150px;right:-100px}
 .hero .bg-glow-green{bottom:-100px;left:-150px}
 .hero-content{position:relative;z-index:2;text-align:center;max-width:850px;margin:0 auto}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,214,66,0.1);border:1px solid rgba(255,214,66,0.25);border-radius:50px;padding:8px 20px;font-size:0.85rem;color:#FFD642;font-weight:600;margin-bottom:30px;letter-spacing:0.05em;text-transform:uppercase}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,214,66,0.1);border:1px solid rgba(255,214,66,0.25);border-radius:50px;padding:8px 18px;font-size:0.8rem;color:#FFD642;font-weight:600;margin-bottom:24px;letter-spacing:0.05em;text-transform:uppercase}
 .hero-badge .dot{width:8px;height:8px;background:#37ca37;border-radius:50%;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
-.hero h1{margin-bottom:24px;color:#fff}
+.hero h1{margin-bottom:20px;color:#fff}
 .hero h1 em{font-style:normal;color:#FFD642}
-.hero-subtitle{font-size:clamp(1.1rem,2vw,1.3rem);color:#8893A8;max-width:650px;margin:0 auto 40px;line-height:1.6}
-.hero-stats{display:flex;justify-content:center;gap:50px;margin-top:60px;flex-wrap:wrap}
+.hero-subtitle{font-size:clamp(1rem,2.5vw,1.25rem);color:#8893A8;max-width:640px;margin:0 auto 36px;line-height:1.65}
+.hero-stats{display:flex;justify-content:center;gap:40px;margin-top:50px;flex-wrap:wrap}
 .hero-stat{text-align:center}
-.hero-stat .num{font-family:'Inter Tight',sans-serif;font-size:2.5rem;font-weight:800;display:block}
-.hero-stat .label{font-size:0.85rem;color:#8893A8;margin-top:4px}
-.hero-logo{width:120px;height:auto;margin-bottom:30px;border-radius:16px}
+.hero-stat .num{font-family:'Inter Tight',sans-serif;font-size:clamp(2rem,5vw,2.5rem);font-weight:800;display:block}
+.hero-stat .label{font-size:clamp(0.75rem,2vw,0.85rem);color:#8893A8;margin-top:4px}
 
 /* === CARDS === */
-.glass-card{background:rgba(255,255,255,0.03);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.06);border-radius:20px;padding:40px;transition:all 0.3s ease}
+.glass-card{background:rgba(255,255,255,0.03);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.06);border-radius:20px;padding:36px;transition:all 0.3s ease}
 .glass-card:hover{border-color:rgba(255,214,66,0.15);transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,0.3)}
 .glass-card-green{border-color:rgba(55,202,55,0.15)}
 .glass-card-green:hover{border-color:rgba(55,202,55,0.3)}
 
-/* === ABOUT SECTION === */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.about-image{border-radius:20px;overflow:hidden;position:relative}
-.about-image img{width:100%;height:auto;display:block;border-radius:20px}
-.about-image::after{content:'';position:absolute;inset:0;border-radius:20px;border:1px solid rgba(255,214,66,0.1)}
-.feature-list{list-style:none;padding:0;margin:30px 0}
-.feature-list li{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px;font-size:1.05rem;color:#c4cdd9}
-.feature-list li .icon{width:24px;height:24px;background:linear-gradient(135deg,#FFD642,#37ca37);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:4px;font-size:0.7rem;color:#0A0F1C;font-weight:700}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.feature-list{list-style:none;padding:0;margin:24px 0}
+.feature-list li{display:flex;gap:12px;align-items:flex-start;margin-bottom:16px;font-size:clamp(0.9rem,2.5vw,1.05rem);color:#c4cdd9}
+.feature-list li .icon{width:24px;height:24px;min-width:24px;background:linear-gradient(135deg,#FFD642,#37ca37);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:3px;font-size:0.7rem;color:#0A0F1C;font-weight:700}
 
-/* === SAY NO / SAY YES === */
-.contrast-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
-.contrast-card{border-radius:20px;padding:45px 40px}
+.contrast-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.contrast-card{border-radius:20px;padding:36px 32px}
 .contrast-card.no{background:linear-gradient(135deg,rgba(233,61,61,0.08),rgba(233,61,61,0.02));border:1px solid rgba(233,61,61,0.15)}
 .contrast-card.yes{background:linear-gradient(135deg,rgba(55,202,55,0.08),rgba(55,202,55,0.02));border:1px solid rgba(55,202,55,0.15)}
-.contrast-card h3{margin-bottom:25px;display:flex;align-items:center;gap:12px}
+.contrast-card h3{margin-bottom:20px;display:flex;align-items:center;gap:10px}
 .contrast-card.no h3{color:#e93d3d}
 .contrast-card.yes h3{color:#37ca37}
 .contrast-list{list-style:none;padding:0}
-.contrast-list li{padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:1rem;color:#c4cdd9;display:flex;align-items:flex-start;gap:12px}
+.contrast-list li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:clamp(0.9rem,2.5vw,1rem);color:#c4cdd9;display:flex;align-items:flex-start;gap:10px}
 .contrast-list li:last-child{border-bottom:none}
 .contrast-list .x{color:#e93d3d;font-weight:700;font-size:1.1rem;flex-shrink:0}
 .contrast-list .check{color:#37ca37;font-weight:700;font-size:1.1rem;flex-shrink:0}
 
-/* === LETTER === */
-.letter-card{background:linear-gradient(135deg,rgba(14,24,44,0.9),rgba(10,15,28,0.95));border:1px solid rgba(255,214,66,0.1);border-radius:24px;padding:60px;max-width:850px;margin:0 auto;position:relative}
+.letter-card{background:linear-gradient(135deg,rgba(14,24,44,0.9),rgba(10,15,28,0.95));border:1px solid rgba(255,214,66,0.1);border-radius:24px;padding:50px;max-width:850px;margin:0 auto;position:relative}
 .letter-card::before{content:'';position:absolute;top:-1px;left:50px;right:50px;height:3px;background:linear-gradient(90deg,transparent,#FFD642,transparent);border-radius:0 0 3px 3px}
-.letter-meta{display:flex;align-items:center;gap:15px;margin-bottom:30px;font-size:0.95rem;color:#8893A8}
-.letter-meta .avatar{width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,#FFD642,#37ca37);display:flex;align-items:center;justify-content:center;font-weight:700;color:#0A0F1C;font-size:1.2rem}
-.letter-content p{margin-bottom:18px;color:#c4cdd9;line-height:1.8}
+.letter-meta{display:flex;align-items:center;gap:14px;margin-bottom:28px;font-size:0.95rem;color:#8893A8}
+.letter-meta .avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#FFD642,#37ca37);display:flex;align-items:center;justify-content:center;font-weight:700;color:#0A0F1C;font-size:1.1rem}
+.letter-content p{margin-bottom:16px;color:#c4cdd9;line-height:1.8}
 .letter-content strong{color:#fff;font-weight:600}
-.letter-highlight{background:rgba(255,214,66,0.06);border-left:3px solid #FFD642;padding:20px 25px;border-radius:0 12px 12px 0;margin:25px 0}
+.letter-highlight{background:rgba(255,214,66,0.06);border-left:3px solid #FFD642;padding:18px 22px;border-radius:0 12px 12px 0;margin:22px 0}
 .letter-highlight p{color:#e8d9a0;margin:0}
 
-/* === DISCLAIMER === */
-.disclaimer{background:rgba(233,61,61,0.04);border:1px solid rgba(233,61,61,0.12);border-radius:16px;padding:35px 40px;max-width:850px;margin:40px auto 0}
-.disclaimer h4{color:#e93d3d;margin-bottom:12px;display:flex;align-items:center;gap:10px}
-.disclaimer p{font-size:0.95rem;color:#9a8a8a}
+.disclaimer{background:rgba(233,61,61,0.04);border:1px solid rgba(233,61,61,0.12);border-radius:16px;padding:30px;max-width:850px;margin:36px auto 0}
+.disclaimer h4{color:#e93d3d;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.disclaimer p{font-size:clamp(0.85rem,2.2vw,0.95rem);color:#9a8a8a}
 
-/* === SUCCESS STORIES === */
-.stories-grid{display:grid;gap:80px}
-.story-card{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.stories-grid{display:grid;gap:70px}
+.story-card{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 .story-card:nth-child(even){direction:rtl}
 .story-card:nth-child(even) > *{direction:ltr}
 .story-video{position:relative;border-radius:20px;overflow:hidden;background:#111827;aspect-ratio:16/9;border:1px solid rgba(255,255,255,0.08)}
-.story-video .play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:80px;height:80px;background:rgba(255,214,66,0.9);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s;z-index:2;border:none}
-.story-video .play-btn::after{content:'';width:0;height:0;border-style:solid;border-width:14px 0 14px 24px;border-color:transparent transparent transparent #0A0F1C;margin-left:4px}
+.story-video .play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:70px;height:70px;background:rgba(255,214,66,0.9);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s;z-index:2;border:none;-webkit-tap-highlight-color:transparent}
+.story-video .play-btn::after{content:'';width:0;height:0;border-style:solid;border-width:12px 0 12px 20px;border-color:transparent transparent transparent #0A0F1C;margin-left:3px}
 .story-video .play-btn:hover{transform:translate(-50%,-50%) scale(1.1);background:#FFD642}
-.story-video .video-label{position:absolute;bottom:16px;left:16px;background:rgba(0,0,0,0.7);backdrop-filter:blur(8px);padding:8px 16px;border-radius:8px;font-size:0.8rem;color:#8893A8;z-index:2}
+.story-video .video-label{position:absolute;bottom:12px;left:12px;background:rgba(0,0,0,0.7);backdrop-filter:blur(8px);padding:6px 14px;border-radius:8px;font-size:0.75rem;color:#8893A8;z-index:2}
 .story-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;z-index:3}
-.story-text h3{margin-bottom:16px}
-.story-text p{margin-bottom:16px}
-.story-text .highlight-stat{display:inline-block;background:rgba(255,214,66,0.1);color:#FFD642;font-weight:700;padding:4px 14px;border-radius:8px;font-size:0.95rem}
+.story-text h3{margin-bottom:14px}
+.story-text p{margin-bottom:14px}
+.story-text .highlight-stat{display:inline-block;background:rgba(255,214,66,0.1);color:#FFD642;font-weight:700;padding:4px 12px;border-radius:8px;font-size:0.9rem}
 
-/* === TIMELINE === */
-.timeline{position:relative;padding-left:40px}
-.timeline::before{content:'';position:absolute;left:12px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,#FFD642,#37ca37,#188bf6)}
-.timeline-item{position:relative;margin-bottom:50px}
-.timeline-item::before{content:'';position:absolute;left:-34px;top:6px;width:16px;height:16px;border-radius:50%;background:#FFD642;border:3px solid #0A0F1C;z-index:1}
+.timeline{position:relative;padding-left:36px}
+.timeline::before{content:'';position:absolute;left:11px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,#FFD642,#37ca37,#188bf6)}
+.timeline-item{position:relative;margin-bottom:44px}
+.timeline-item::before{content:'';position:absolute;left:-30px;top:6px;width:14px;height:14px;border-radius:50%;background:#FFD642;border:3px solid #0A0F1C;z-index:1}
 .timeline-item:nth-child(2)::before{background:#37ca37}
 .timeline-item:nth-child(3)::before{background:#188bf6}
 .timeline-item:nth-child(4)::before{background:#FFD642}
-.timeline-item h4{margin-bottom:10px;color:#fff}
+.timeline-item h4{margin-bottom:8px;color:#fff}
 .timeline-item p{color:#c4cdd9}
-.timeline-image{border-radius:16px;margin-top:20px;max-width:100%;border:1px solid rgba(255,255,255,0.08)}
+.timeline-image{border-radius:14px;margin-top:16px;max-width:100%;border:1px solid rgba(255,255,255,0.08)}
 
-/* === INSIGHTS === */
-.insights-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
-.insight-card{padding:30px;border-radius:16px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);transition:all 0.3s}
+.insights-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.insight-card{padding:28px;border-radius:16px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);transition:all 0.3s}
 .insight-card:hover{border-color:rgba(255,214,66,0.15);transform:translateY(-2px)}
-.insight-card .emoji{font-size:2rem;margin-bottom:16px;display:block}
-.insight-card h4{margin-bottom:10px;font-size:1.1rem}
-.insight-card p{font-size:0.95rem;color:#8893A8}
+.insight-card .emoji{font-size:1.8rem;margin-bottom:14px;display:block}
+.insight-card h4{margin-bottom:8px;font-size:1.05rem}
+.insight-card p{font-size:clamp(0.85rem,2.2vw,0.95rem);color:#8893A8}
 
-/* === WHAT WE DON'T DO === */
-.dont-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.dont-card{background:rgba(233,61,61,0.04);border:1px solid rgba(233,61,61,0.1);border-radius:16px;padding:24px;display:flex;gap:14px;align-items:flex-start}
-.dont-card .x-icon{width:28px;height:28px;background:rgba(233,61,61,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#e93d3d;font-weight:700;font-size:0.9rem}
-.dont-card p{font-size:0.95rem;color:#9a8a8a;margin:0}
+.dont-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.dont-card{background:rgba(233,61,61,0.04);border:1px solid rgba(233,61,61,0.1);border-radius:16px;padding:22px;display:flex;gap:12px;align-items:flex-start}
+.dont-card .x-icon{width:26px;height:26px;min-width:26px;background:rgba(233,61,61,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#e93d3d;font-weight:700;font-size:0.85rem}
+.dont-card p{font-size:clamp(0.85rem,2.2vw,0.95rem);color:#9a8a8a;margin:0}
 
-/* === ESSENCE === */
 .essence-content{max-width:800px;margin:0 auto}
-.essence-content p{margin-bottom:20px;font-size:1.05rem;line-height:1.8}
+.essence-content p{margin-bottom:18px;font-size:clamp(0.95rem,2.5vw,1.05rem);line-height:1.8}
 .essence-content strong{color:#fff}
 
-/* === STEPS === */
-.step-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin:40px 0}
-.step-card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:30px;text-align:center;transition:all 0.3s}
+.step-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin:36px 0}
+.step-card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:28px;text-align:center;transition:all 0.3s}
 .step-card:hover{border-color:rgba(55,202,55,0.2);transform:translateY(-3px)}
-.step-card .step-num{width:48px;height:48px;background:linear-gradient(135deg,#FFD642,#37ca37);border-radius:12px;display:inline-flex;align-items:center;justify-content:center;font-family:'Inter Tight',sans-serif;font-weight:800;font-size:1.3rem;color:#0A0F1C;margin-bottom:16px}
-.step-card h4{margin-bottom:8px;font-size:1rem}
-.step-card p{font-size:0.9rem;color:#8893A8}
+.step-card .step-num{width:44px;height:44px;background:linear-gradient(135deg,#FFD642,#37ca37);border-radius:12px;display:inline-flex;align-items:center;justify-content:center;font-family:'Inter Tight',sans-serif;font-weight:800;font-size:1.2rem;color:#0A0F1C;margin-bottom:14px}
+.step-card h4{margin-bottom:6px;font-size:1rem}
+.step-card p{font-size:clamp(0.8rem,2vw,0.9rem);color:#8893A8}
 
-/* === CTA === */
 .cta-section{text-align:center;position:relative;overflow:hidden}
-.cta-card{background:linear-gradient(135deg,rgba(255,214,66,0.05),rgba(55,202,55,0.03));border:1px solid rgba(255,214,66,0.12);border-radius:24px;padding:70px 50px;position:relative;z-index:2;max-width:850px;margin:0 auto}
-.cta-card h2{margin-bottom:20px}
-.cta-card p{max-width:600px;margin:0 auto 40px}
+.cta-card{background:linear-gradient(135deg,rgba(255,214,66,0.05),rgba(55,202,55,0.03));border:1px solid rgba(255,214,66,0.12);border-radius:24px;padding:60px 40px;position:relative;z-index:2;max-width:850px;margin:0 auto}
+.cta-card h2{margin-bottom:18px}
+.cta-card p{max-width:600px;margin:0 auto 36px}
 
-/* === FOOTER === */
-footer{background:#070B15;border-top:1px solid rgba(255,255,255,0.05);padding:40px 0;text-align:center}
-footer p{font-size:0.85rem;color:#555d6e}
+footer{background:#070B15;border-top:1px solid rgba(255,255,255,0.05);padding:36px 0;text-align:center}
+footer p{font-size:0.82rem;color:#555d6e}
 footer a{color:#8893A8;text-decoration:none;transition:color 0.3s}
 footer a:hover{color:#FFD642}
 
-/* === SCROLL ANIMATIONS === */
-.fade-up{opacity:0;transform:translateY(40px);transition:all 0.8s cubic-bezier(0.25,0.46,0.45,0.94)}
+.fade-up{opacity:0;transform:translateY(30px);transition:all 0.7s cubic-bezier(.25,.46,.45,.94)}
 .fade-up.visible{opacity:1;transform:translateY(0)}
-.fade-left{opacity:0;transform:translateX(-40px);transition:all 0.8s cubic-bezier(0.25,0.46,0.45,0.94)}
+.fade-left{opacity:0;transform:translateX(-30px);transition:all 0.7s cubic-bezier(.25,.46,.45,.94)}
 .fade-left.visible{opacity:1;transform:translateX(0)}
-.fade-right{opacity:0;transform:translateX(40px);transition:all 0.8s cubic-bezier(0.25,0.46,0.45,0.94)}
+.fade-right{opacity:0;transform:translateX(30px);transition:all 0.7s cubic-bezier(.25,.46,.45,.94)}
 .fade-right.visible{opacity:1;transform:translateX(0)}
-.scale-in{opacity:0;transform:scale(0.95);transition:all 0.8s cubic-bezier(0.25,0.46,0.45,0.94)}
+.scale-in{opacity:0;transform:scale(0.95);transition:all 0.7s cubic-bezier(.25,.46,.45,.94)}
 .scale-in.visible{opacity:1;transform:scale(1)}
 
-/* === RESPONSIVE === */
+.spacer-sm{height:24px}
+.spacer-md{height:40px}
+.spacer-lg{height:70px}
+.float-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(55,202,55,0.1);border:1px solid rgba(55,202,55,0.2);color:#37ca37;padding:6px 14px;border-radius:8px;font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:14px}
+.rounded-img{border-radius:20px;border:1px solid rgba(255,255,255,0.08);width:100%;height:auto;display:block}
+.journey-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+
+/* === TABLET === */
 @media(max-width:900px){
   .about-grid,.story-card,.contrast-grid,.journey-grid{grid-template-columns:1fr}
   .story-card:nth-child(even){direction:ltr}
-  .hero-stats{gap:30px}
-  section{padding:70px 0}
-  .letter-card{padding:35px 25px}
-  .cta-card{padding:50px 30px}
-  .hero{min-height:auto;padding:100px 0 70px}
+  .hero-stats{gap:24px}
+  section{padding:60px 0}
+  .letter-card{padding:32px 24px}
+  .cta-card{padding:40px 24px}
+  .hero{min-height:auto;padding:90px 0 60px}
+  .about-grid{gap:36px}
+  .stories-grid{gap:50px}
+  .story-card{gap:30px}
 }
+
+/* === MOBILE === */
 @media(max-width:600px){
-  .btn{padding:16px 32px;font-size:0.95rem;width:100%}
-  .hero-stats{flex-direction:column;gap:20px}
-  .glass-card{padding:28px 22px}
-  .contrast-card{padding:30px 25px}
-  h1{font-size:2rem}
+  .container{padding:0 16px}
+  .btn{padding:16px 28px;font-size:0.9rem;width:100%;max-width:400px}
+  .hero-stats{flex-direction:column;gap:16px;align-items:center}
+  .hero-stat .num{font-size:2rem}
+  .glass-card{padding:24px 18px}
+  .contrast-card{padding:24px 20px}
+  .letter-card{padding:28px 18px}
+  .letter-card::before{left:20px;right:20px}
+  .disclaimer{padding:24px 18px}
+  h1{font-size:1.75rem}
+  h2{font-size:1.45rem}
+  section{padding:50px 0}
+  .hero{padding:80px 0 50px}
+  .about-grid{gap:28px}
+  .story-video .play-btn{width:56px;height:56px}
+  .story-video .play-btn::after{border-width:10px 0 10px 16px}
+  .insights-grid{grid-template-columns:1fr}
+  .step-grid{grid-template-columns:1fr 1fr}
+  .dont-grid{grid-template-columns:1fr}
+  .feature-list li{font-size:0.9rem}
+  .timeline{padding-left:30px}
+  .timeline-item::before{left:-24px;width:12px;height:12px}
+  .cta-card{padding:36px 20px}
+  .bg-glow-gold{width:250px;height:250px}
+  .bg-glow-green{width:200px;height:200px}
 }
 
-/* === SPACERS === */
-.spacer-sm{height:30px}
-.spacer-md{height:50px}
-.spacer-lg{height:80px}
-
-/* === DIVIDER === */
-.section-divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,214,66,0.15),transparent);max-width:600px;margin:0 auto}
-
-/* === FLOATING TAG === */
-.float-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(55,202,55,0.1);border:1px solid rgba(55,202,55,0.2);color:#37ca37;padding:6px 14px;border-radius:8px;font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:16px}
-
-/* === IMAGE STYLING === */
-.rounded-img{border-radius:20px;border:1px solid rgba(255,255,255,0.08);width:100%;height:auto;display:block}
-
-/* === JOURNEY GRID === */
-.journey-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+@media(max-width:380px){
+  h1{font-size:1.55rem}
+  h2{font-size:1.3rem}
+  .btn{padding:14px 20px;font-size:0.85rem}
+  .text-logo{font-size:1.4rem}
+  .step-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
 
-<!-- ============================================ -->
-<!-- HERO SECTION -->
-<!-- ============================================ -->
+<!-- ====== HERO ====== -->
 <section class="hero section-dark">
   <div class="bg-grid"></div>
   <div class="bg-glow bg-glow-gold"></div>
   <div class="bg-glow bg-glow-green"></div>
   <div class="container">
     <div class="hero-content fade-up">
-      <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/68f686dfc1945b5d37b8ad45.png" alt="SmartWorker" class="hero-logo">
+      <div class="text-logo"><span class="smart">Smart</span><span class="worker">Worker</span></div>
       <div class="hero-badge">
         <span class="dot"></span>
-        SmartWorker System
+        Обучающая система
       </div>
-      <h1>We teach how to find <em>remote US employers</em></h1>
-      <p class="hero-subtitle">Work online with US companies and earn a stable income every month &mdash; no experience, degree, IELTS, or visa required</p>
-      <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-primary btn-glow">Find out if you have the skills to work</a>
+      <h1>Работай удалённо с&nbsp;компаниями из&nbsp;<em>США</em> и&nbsp;зарабатывай <em>в&nbsp;долларах</em></h1>
+      <p class="hero-subtitle">Мы обучаем людей из любой страны находить работодателей на удалёнку в&nbsp;США &mdash; без опыта, диплома, IELTS и&nbsp;визы</p>
+      <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-primary btn-glow">Узнай, есть ли у тебя навыки для работы</a>
       <div class="hero-stats">
         <div class="hero-stat">
           <span class="num gradient-text">60+</span>
-          <span class="label">People found jobs with US companies</span>
+          <span class="label">Человек нашли работу с компаниями из США</span>
         </div>
         <div class="hero-stat">
           <span class="num gradient-text">$22</span>
-          <span class="label">Average US hourly rate</span>
+          <span class="label">Средняя ставка в час в США</span>
         </div>
         <div class="hero-stat">
           <span class="num gradient-text">0</span>
-          <span class="label">Experience required</span>
+          <span class="label">Опыта необходимо</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================ -->
-<!-- ABOUT SMARTWORKER -->
-<!-- ============================================ -->
+<!-- ====== О SMARTWORKER ====== -->
 <section class="section-gradient">
   <div class="container">
     <div class="about-grid">
       <div class="fade-left">
-        <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/6900dd0fc570512844827011.png" alt="SmartWorker System" class="rounded-img">
+        <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/6900dd0fc570512844827011.png" alt="SmartWorker" class="rounded-img">
       </div>
       <div class="fade-right">
-        <span class="float-tag">Proven System</span>
-        <h2>More than 60 people found jobs with <span class="text-gold">American companies</span> through this system</h2>
-        <p style="margin-top:20px;">SmartWorker is a training system that helps people from any country enter the international job market and start working remotely with foreign companies.</p>
+        <span class="float-tag">Проверенная система</span>
+        <h2>Более 60 человек нашли работу с <span class="text-gold">американскими компаниями</span> благодаря этой системе</h2>
+        <p style="margin-top:18px;">SmartWorker &mdash; это обучающая система, которая помогает людям из любой страны выйти на международный рынок труда и начать работать с иностранными компаниями дистанционно.</p>
         <ul class="feature-list">
-          <li>
-            <span class="icon">&#10003;</span>
-            We teach not only English but also practical skills demanded by foreign employers
-          </li>
-          <li>
-            <span class="icon">&#10003;</span>
-            You can find clients and earn stable income &mdash; even without prior experience
-          </li>
-          <li>
-            <span class="icon">&#10003;</span>
-            Thousands of companies worldwide hire remote specialists who can organize tasks and deliver quality work
-          </li>
-          <li>
-            <span class="icon">&#10003;</span>
-            The key is knowing where to find employers and how to present yourself professionally &mdash; and that's exactly what SmartWorker teaches
-          </li>
+          <li><span class="icon">&#10003;</span> Мы обучаем не только английскому языку, но и практическим навыкам, востребованным у зарубежных работодателей</li>
+          <li><span class="icon">&#10003;</span> Ты сможешь находить клиентов и получать стабильный доход &mdash; даже если раньше у тебя не было подобного опыта</li>
+          <li><span class="icon">&#10003;</span> Тысячи компаний по всему миру нанимают удалённых специалистов, которые умеют организовывать задачи и качественно выполнять работу</li>
+          <li><span class="icon">&#10003;</span> Главное &mdash; знать, где искать работодателей и как грамотно себя презентовать. И этому мы как раз учим в SmartWorker</li>
         </ul>
-        <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-secondary">Take a short survey</a>
+        <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-secondary">Пройти короткий опрос</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================ -->
-<!-- INCOME POTENTIAL -->
-<!-- ============================================ -->
+<!-- ====== ПОТЕНЦИАЛ ДОХОДА ====== -->
 <section class="section-navy">
   <div class="container text-center">
     <div class="fade-up" style="max-width:800px;margin:0 auto;">
-      <span class="float-tag">Income Potential</span>
-      <h2>Not just a job. <span class="gradient-text">A new way of life.</span></h2>
+      <span class="float-tag">Потенциал дохода</span>
+      <h2>Это не просто работа. <span class="gradient-text">Это новый образ жизни.</span></h2>
       <div class="spacer-sm"></div>
-      <p>The average hourly rate for a remote specialist in the US is about <strong class="text-gold">$22/hour</strong>. Even starting at <strong class="text-white">$7&ndash;$12/hour</strong> on international projects, you earn significantly more than most local jobs. With experience and confidence, you can easily reach <strong class="text-green">$15&ndash;$20/hour and above</strong>.</p>
+      <p>Средняя ставка удалённого специалиста в США &mdash; около <strong class="text-gold">$22 в час</strong>. Даже начиная с <strong class="text-white">$7&ndash;$12 в час</strong> на международных проектах, ты зарабатываешь в несколько раз больше, чем в большинстве локальных вакансий. А с опытом и уверенностью легко выйти на <strong class="text-green">$15&ndash;$20 в час и выше</strong>.</p>
       <div class="spacer-sm"></div>
-      <p>The SmartWorker system is for everyone &mdash; whether you already have skills or are just starting out. All you need is <strong class="text-white">a laptop, internet, and the desire to grow</strong>.</p>
+      <p>Система SmartWorker подходит всем &mdash; и тем, у кого уже есть навыки, и тем, кто только начинает. Всё, что тебе нужно &mdash; <strong class="text-white">ноутбук, интернет и желание развиваться</strong>.</p>
       <div class="spacer-md"></div>
-      <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-primary">Find out if virtual assistant suits you</a>
+      <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-primary">Узнай, подходит ли тебе профессия виртуального ассистента</a>
     </div>
   </div>
 </section>
 
-<!-- ============================================ -->
-<!-- WHAT THIS MEANS FOR YOU -->
-<!-- ============================================ -->
+<!-- ====== ЧТО ЭТО ЗНАЧИТ ДЛЯ ТЕБЯ ====== -->
 <section class="section-dark">
   <div class="container">
-    <div class="text-center fade-up" style="margin-bottom:60px;">
-      <h2>For those who want to earn <span class="gradient-text">remote income in dollars</span></h2>
-      <p style="max-width:650px;margin:20px auto 0;">You'll discover a completely new way to start earning in dollars &mdash; even if you have zero experience. This is a step-by-step guide based on real stories and results.</p>
+    <div class="text-center fade-up" style="margin-bottom:50px;">
+      <h2>Для тех, кто хочет выйти на <span class="gradient-text">удалённый заработок в долларах</span></h2>
+      <p style="max-width:650px;margin:18px auto 0;">Ты откроешь для себя совершенно новый способ начать зарабатывать в долларах &mdash; даже если у тебя ноль опыта. Это пошаговое руководство, основанное на реальных историях и результатах.</p>
     </div>
 
-    <div class="about-grid" style="margin-bottom:60px;">
+    <div class="about-grid" style="margin-bottom:50px;">
       <div class="fade-left">
-        <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/68f6948118c42038134cbdc4.png" alt="What this means for you" class="rounded-img">
+        <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/68f6948118c42038134cbdc4.png" alt="Что это значит для тебя" class="rounded-img">
       </div>
       <div class="fade-right">
-        <h3 style="margin-bottom:30px;">What this means for <span class="text-gold">you</span> and your future</h3>
-        <p>This isn't just another info product. It's a step-by-step guide based on real stories and results &mdash; about how ordinary people find remote work, get paid in foreign currency, and finally gain the freedom to work from anywhere.</p>
+        <h3 style="margin-bottom:24px;">Вот что это значит для <span class="text-gold">тебя</span> и твоего будущего</h3>
+        <p>Это не просто очередной инфопродукт. Это пошаговое руководство о том, как обычные люди находят удалённую работу, получают оплату в валюте и, наконец, получают свободу работать откуда угодно.</p>
         <div class="spacer-md"></div>
-        <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-secondary">Answer a few questions</a>
+        <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-secondary">Ответить на несколько вопросов</a>
       </div>
     </div>
 
-    <!-- SAY NO / SAY YES -->
     <div class="contrast-grid fade-up">
       <div class="contrast-card no glass-card">
-        <h3><span style="font-size:1.6rem;">&#10060;</span> SAY NO:</h3>
+        <h3><span style="font-size:1.5rem;">&#10060;</span> СКАЖИ НЕТ:</h3>
         <ul class="contrast-list">
-          <li><span class="x">&#10005;</span> Ungrateful employers</li>
-          <li><span class="x">&#10005;</span> Low salary</li>
-          <li><span class="x">&#10005;</span> Attempts to get rich quick with shady schemes</li>
-          <li><span class="x">&#10005;</span> Lack of growth and career development</li>
+          <li><span class="x">&#10005;</span> Неблагодарным работодателям</li>
+          <li><span class="x">&#10005;</span> Маленькой зарплате</li>
+          <li><span class="x">&#10005;</span> Попыткам разбогатеть и &laquo;тёмкам&raquo;</li>
+          <li><span class="x">&#10005;</span> Отсутствию развития и карьерного роста</li>
         </ul>
       </div>
       <div class="contrast-card yes glass-card glass-card-green">
-        <h3><span style="font-size:1.6rem;">&#9989;</span> SAY YES:</h3>
+        <h3><span style="font-size:1.5rem;">&#9989;</span> СКАЖИ ДА:</h3>
         <ul class="contrast-list">
-          <li><span class="check">&#10003;</span> Employers who respect your work and show gratitude</li>
-          <li><span class="check">&#10003;</span> High-paying work without visas or relocation</li>
-          <li><span class="check">&#10003;</span> Life on your own terms</li>
-          <li><span class="check">&#10003;</span> Skills development and time for yourself</li>
+          <li><span class="check">&#10003;</span> Работодателям, которые уважают вашу работу и относятся с благодарностью</li>
+          <li><span class="check">&#10003;</span> Высокооплачиваемой работе без виз и переездов</li>
+          <li><span class="check">&#10003;</span> Жизни на своих условиях</li>
+          <li><span class="check">&#10003;</span> Развитию навыков и времени для себя</li>
         </ul>
       </div>
     </div>
     <div class="spacer-md"></div>
     <div class="text-center">
-      <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-green">Find out if this program is right for you</a>
+      <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-green">Узнать, подходит ли программа вам</a>
     </div>
   </div>
 </section>
 
-<!-- ============================================ -->
-<!-- LETTER FROM TEAM -->
-<!-- ============================================ -->
+<!-- ====== ПИСЬМО ОТ КОМАНДЫ ====== -->
 <section class="section-navy">
   <div class="container">
     <div class="letter-card scale-in">
       <div class="letter-meta">
         <div class="avatar">S</div>
         <div>
-          <strong class="text-white" style="font-size:1.05rem;">SmartWorker Team</strong><br>
-          <span style="font-size:0.85rem;">Subject: Freedom. Travel. Financial Stability.</span>
+          <strong class="text-white" style="font-size:1.02rem;">Команда SmartWorker</strong><br>
+          <span style="font-size:0.83rem;">Тема: Свобода. Путешествия. Финансовая стабильность.</span>
         </div>
       </div>
       <div class="letter-content">
-        <p>Dear future SmartWorker member,</p>
-        <p>Imagine being able to work with foreign companies, get paid <strong>in dollars</strong>, and stay in the comfort of your home &mdash; or grab your laptop and work from <strong>anywhere in the world</strong>. Thousands of people live this way, and that's exactly what we teach in the <strong class="text-gold">SmartWorker system</strong>.</p>
-        <p>I started from zero &mdash; no experience, no connections, no visa. And now my income exceeds <strong class="text-gold">$10,000 per month</strong>, simply thanks to the system described in my program.</p>
-        <p>Skeptical? I understand. I was doubtful too. But the truth is that remote work for foreign clients is <strong>not a myth, but a real opportunity</strong>. Today, thousands of American companies are looking for freelance employees: assistants, support specialists, designers, marketers, and many others.</p>
+        <p>Дорогой будущий участник системы SmartWorker,</p>
+        <p>Представь, что ты можешь работать с зарубежными компаниями, получать оплату <strong>в долларах</strong> и при этом оставаться в комфорте своего дома &mdash; или брать ноутбук и работать из <strong>любой точки мира</strong>. Так живут тысячи людей, и именно этому мы обучаем в системе <strong class="text-gold">SmartWorker</strong>.</p>
+        <p>Я сам начинал с нуля &mdash; без опыта, без связей и без визы. И теперь мой доход превышает <strong class="text-gold">$10&nbsp;000 в месяц</strong>, просто благодаря системе, описанной в моей программе.</p>
+        <p>Скептично? Я понимаю. Я тоже когда-то сомневался. Но правда в том, что удалённая работа для зарубежных клиентов &mdash; это <strong>не миф, а реальная возможность</strong>. Сегодня тысячи американских компаний ищут сотрудников на фрилансе: ассистентов, специалистов по поддержке, дизайнеров, маркетологов и многих других.</p>
 
         <div class="letter-highlight">
-          <p><strong>What you get with the SmartWorker system:</strong></p>
+          <p><strong>Что ты получаешь с системой SmartWorker:</strong></p>
         </div>
-        <ul class="feature-list" style="margin-bottom:30px;">
-          <li><span class="icon">1</span> A step-by-step plan for starting to work with foreign employers</li>
-          <li><span class="icon">2</span> English language training for professional communication</li>
-          <li><span class="icon">3</span> Skills that are in demand on the international market</li>
-          <li><span class="icon">4</span> Mentor support and ready-made templates to get started</li>
+        <ul class="feature-list" style="margin-bottom:26px;">
+          <li><span class="icon">1</span> Пошаговый план, как начать работать на зарубежных работодателей</li>
+          <li><span class="icon">2</span> Обучение английскому языку для профессиональной коммуникации</li>
+          <li><span class="icon">3</span> Навыки, которые востребованы на международном рынке</li>
+          <li><span class="icon">4</span> Поддержку наставников и готовые шаблоны для старта</li>
         </ul>
-        <p>SmartWorker is not a "magic button", but a <strong>real system</strong> that helps people become financially independent while maintaining freedom and comfort.</p>
+        <p>SmartWorker &mdash; это не &laquo;волшебная кнопка&raquo;, а <strong>реальная система</strong>, которая помогает людям стать финансово независимыми, сохраняя свободу и комфорт.</p>
       </div>
     </div>
 
-    <!-- DISCLAIMER -->
     <div class="disclaimer fade-up">
-      <h4>&#9888;&#65039; Important disclaimer</h4>
-      <p>I want to be completely honest with you. Most people who buy training materials don't get significant results &mdash; not because the programs don't work, but because they don't follow through consistently. The examples I share are illustrations of what's possible with the right approach. Your results will depend on your persistence, discipline, willingness to learn, and English proficiency. Any training and development is a journey that requires time, effort, and personal responsibility.</p>
+      <h4>&#9888;&#65039; Важное предупреждение</h4>
+      <p>Я хочу быть с тобой максимально честным. Большинство людей, которые покупают обучающие материалы, не получают значимых результатов &mdash; не потому что программы не работают, а потому что они не действуют последовательно. Примеры служат лишь иллюстрацией того, что возможно при правильном подходе. Твои результаты будут зависеть от твоей настойчивости, дисциплины, готовности учиться и уровня английского языка. Любое обучение и развитие &mdash; это путь, требующий времени, усилий и личной ответственности.</p>
     </div>
   </div>
 </section>
 
-<!-- ============================================ -->
-<!-- FOUNDER IMAGE + STORY INTRO -->
-<!-- ============================================ -->
+<!-- ====== ОСНОВАТЕЛЬ ====== -->
 <section class="section-dark">
   <div class="container">
     <div class="about-grid">
       <div class="fade-left">
-        <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/68f6944422a723c7ead138fb.png" alt="SmartWorker Founder" class="rounded-img">
+        <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/68f6944422a723c7ead138fb.png" alt="Основатель SmartWorker" class="rounded-img">
       </div>
       <div class="fade-right">
-        <span class="float-tag">Real Story</span>
-        <h2>Let me <span class="gradient-text">prove it</span> to you...</h2>
-        <p style="margin-top:16px;">People often ask me whether it's true that I managed to earn over <strong class="text-gold">$10,000 per month</strong> working from home and traveling whenever I want.</p>
-        <p>Yes, it really is. And it all started with the system I described in detail in my SmartWorker program.</p>
-        <p>If you're a bit skeptical right now &mdash; I understand you. I didn't immediately believe either that you could build a stable income working with foreign clients without experience or a visa. But the fact is &mdash; <strong class="text-white">it's possible</strong>.</p>
+        <span class="float-tag">Реальная история</span>
+        <h2>Давай я тебе <span class="gradient-text">докажу...</span></h2>
+        <p style="margin-top:14px;">Меня часто спрашивают, правда ли, что я смог зарабатывать более <strong class="text-gold">$10&nbsp;000 в месяц</strong>, работая из дома и путешествуя, когда хочу.</p>
+        <p>Да, это действительно так. И всё началось с системы, которую я подробно описал в своей программе SmartWorker.</p>
+        <p>Если ты сейчас немного скептичен &mdash; я понимаю тебя. Я тоже не сразу поверил, что можно построить стабильный доход, работая с зарубежными клиентами, не имея опыта и визы. Но факт в том, что &mdash; <strong class="text-white">это возможно</strong>.</p>
         <div class="spacer-sm"></div>
-        <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-primary">Check your readiness for training</a>
+        <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-primary">Проверить свою готовность к обучению</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================ -->
-<!-- SUCCESS STORIES -->
-<!-- ============================================ -->
+<!-- ====== ИСТОРИИ УСПЕХА ====== -->
 <section class="section-navy" id="stories">
   <div class="container">
-    <div class="text-center fade-up" style="margin-bottom:70px;">
-      <span class="float-tag">Success Stories</span>
-      <h2>Real people. <span class="gradient-text">Real results.</span></h2>
-      <p style="max-width:600px;margin:16px auto 0;">Every graduate follows their own path, but all share one thing &mdash; they take real steps toward freedom, stability, and professional growth.</p>
+    <div class="text-center fade-up" style="margin-bottom:60px;">
+      <span class="float-tag">Истории успеха</span>
+      <h2>Реальные люди. <span class="gradient-text">Реальные результаты.</span></h2>
+      <p style="max-width:600px;margin:14px auto 0;">Каждый наш выпускник идёт своим путём, но всех объединяет одно &mdash; они делают реальные шаги к свободе, стабильности и профессиональному росту.</p>
     </div>
 
     <div class="stories-grid">
 
-      <!-- STORY 1: SLAVA -->
+      <!-- СЛАВА -->
       <div class="story-card fade-up">
         <div class="story-video" id="video-slava">
-          <button class="play-btn" aria-label="Play video"></button>
-          <span class="video-label">Video coming soon</span>
-          <!-- To embed a YouTube video, replace this comment with:
-               <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <button class="play-btn" aria-label="Воспроизвести видео"></button>
+          <span class="video-label">Видео скоро</span>
+          <!-- Для YouTube видео вставьте iframe:
+               <iframe src="https://www.youtube.com/embed/VIDEO_ID" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           -->
         </div>
         <div class="story-text">
-          <h3>Slava's Story &mdash; <span class="text-gold">Design Director in Florida</span></h3>
-          <p>Slava has been working for the second year as a <strong class="text-white">Design Director</strong> at a marketing agency based in Florida. That's impressive &mdash; especially considering he's only <strong class="text-white">27 years old</strong>.</p>
-          <p>The average designer salary in the US is about <span class="highlight-stat">$65,000/year</span> and Slava is already approaching this level. Thanks to his experience, he now takes on projects at <strong class="text-gold">$30&ndash;$40/hour</strong>.</p>
-          <p>He proved that even being outside the US, you can build a successful international career if you know how to present yourself and work with clients professionally.</p>
-          <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-secondary" style="margin-top:10px;">Get qualified</a>
+          <h3>История Славы &mdash; <span class="text-gold">Директор по дизайну во Флориде</span></h3>
+          <p>Слава уже второй год работает <strong class="text-white">директором по дизайну</strong> в маркетинговом агентстве, расположенном во Флориде. Ему всего <strong class="text-white">27 лет</strong>.</p>
+          <p>Средняя зарплата дизайнера в США составляет около <span class="highlight-stat">$65&nbsp;000/год</span>, и Слава уже вплотную к этой планке. Сейчас он берёт проекты, где ставка достигает <strong class="text-gold">$30&ndash;$40 в час</strong>.</p>
+          <p>Он доказал, что даже находясь за пределами США, можно построить успешную международную карьеру, если знать, как себя презентовать и работать с клиентами грамотно.</p>
+          <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-secondary" style="margin-top:8px;">Пройти квалификацию</a>
         </div>
       </div>
 
-      <!-- STORY 2: ALINA -->
+      <!-- АЛИНА -->
       <div class="story-card fade-up">
         <div class="story-video" id="video-alina">
-          <button class="play-btn" aria-label="Play video"></button>
-          <span class="video-label">Video coming soon</span>
-          <!-- To embed a YouTube video, replace this comment with:
-               <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <button class="play-btn" aria-label="Воспроизвести видео"></button>
+          <span class="video-label">Видео скоро</span>
+          <!-- Для YouTube видео вставьте iframe:
+               <iframe src="https://www.youtube.com/embed/VIDEO_ID" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           -->
         </div>
         <div class="story-text">
-          <h3>Alina's Story &mdash; <span class="text-green">International Career at 22</span></h3>
-          <p>Meet Alina. She's only <strong class="text-white">22 years old</strong>, living and studying in Italy. A couple of years ago, she approached us looking for <strong class="text-white">remote work in the US</strong>.</p>
-          <p>With SmartWorker, we helped her prepare for the interview, and she soon received an offer from an <strong class="text-white">American business coach</strong>, where she now works in sales.</p>
-          <p>Today her income is about <span class="highlight-stat">$1,280/month</span> &mdash; and she continues to grow professionally, improving her English and gaining international experience.</p>
-          <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-secondary" style="margin-top:10px;">Book a consultation</a>
+          <h3>История Алины &mdash; <span class="text-green">Международная карьера в 22 года</span></h3>
+          <p>Познакомьтесь, это Алина. Ей всего <strong class="text-white">22 года</strong>, она живёт и учится в Италии. Ещё пару лет назад Алина обратилась к нам с целью найти <strong class="text-white">удалённую работу в США</strong>.</p>
+          <p>С помощью системы SmartWorker мы помогли ей подготовиться к собеседованию, и вскоре она получила предложение от <strong class="text-white">американского бизнес-коуча</strong>, где теперь работает в отделе продаж.</p>
+          <p>Сегодня её доход составляет около <span class="highlight-stat">$1&nbsp;280/мес</span> &mdash; и она продолжает профессионально расти, улучшая свой английский и получая международный опыт.</p>
+          <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-secondary" style="margin-top:8px;">Записаться на консультацию</a>
         </div>
       </div>
 
-      <!-- STORY 3: SOFIA -->
+      <!-- СОФИЯ -->
       <div class="story-card fade-up">
         <div class="story-video" id="video-sofia">
-          <button class="play-btn" aria-label="Play video"></button>
-          <span class="video-label">Video coming soon</span>
-          <!-- To embed a YouTube video, replace this comment with:
-               <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <button class="play-btn" aria-label="Воспроизвести видео"></button>
+          <span class="video-label">Видео скоро</span>
+          <!-- Для YouTube видео вставьте iframe:
+               <iframe src="https://www.youtube.com/embed/VIDEO_ID" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           -->
         </div>
         <div class="story-text">
-          <h3>Sofia's Story &mdash; <span class="text-blue">Student Earning $1,500+/month</span></h3>
-          <p>Sofia is an ordinary student who decided to try remote work with foreign employers. Today she earns <strong class="text-gold">$1,500 and more per month</strong>, combining study and online work.</p>
-          <p>The method she uses to find employers is nothing like what you've heard before. It's not classic freelance platforms or endless job applications.</p>
-          <p>It's a <strong class="text-white">new, systematic approach</strong> that really works &mdash; because it was created for real people, without a perfect resume and decades of experience.</p>
-          <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-secondary" style="margin-top:10px;">Start your application</a>
+          <h3>История Софии &mdash; <span class="text-blue">Студентка, $1&nbsp;500+ в месяц</span></h3>
+          <p>София &mdash; обычная студентка, которая решила попробовать себя в удалённой работе с зарубежными работодателями. Сегодня она зарабатывает <strong class="text-gold">$1&nbsp;500 и больше в месяц</strong>, совмещая учёбу и работу онлайн.</p>
+          <p>Метод, который она использует для поиска работодателей, совсем не похож на то, о чём ты слышал раньше. Это не классические фриланс-платформы и не бесконечные отклики на вакансии.</p>
+          <p>Это <strong class="text-white">новый, системный подход</strong>, который действительно работает &mdash; потому что он создан для реальных людей, без идеального резюме и без десятков лет опыта.</p>
+          <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-secondary" style="margin-top:8px;">Начать анкету</a>
         </div>
       </div>
 
@@ -511,257 +487,213 @@ footer a:hover{color:#FFD642}
   </div>
 </section>
 
-<!-- ============================================ -->
-<!-- WHAT WE DON'T DO -->
-<!-- ============================================ -->
+<!-- ====== МЫ НЕ ПРОДАЁМ ====== -->
 <section class="section-dark">
   <div class="container">
-    <div class="text-center fade-up" style="margin-bottom:50px;">
-      <h2>We <span style="color:#e93d3d;">don't</span> sell quick-money schemes</h2>
-      <p style="max-width:550px;margin:16px auto 0;">We believe in honest, sustainable income through real work with real companies.</p>
+    <div class="text-center fade-up" style="margin-bottom:40px;">
+      <h2>Мы <span style="color:#e93d3d;">не продаём</span> быстрый заработок</h2>
+      <p style="max-width:550px;margin:14px auto 0;">Мы верим в честный, стабильный доход через реальную работу с реальными компаниями.</p>
     </div>
     <div class="dont-grid fade-up">
       <div class="dont-card">
         <div class="x-icon">&#10005;</div>
-        <p>We don't try to sell you quick money</p>
+        <p>Мы не пытаемся продать тебе быстрый заработок</p>
       </div>
       <div class="dont-card">
         <div class="x-icon">&#10005;</div>
-        <p>We don't push luxury cars and lavish lifestyles</p>
+        <p>Мы не пихаем тебе дорогие авто и роскошный стиль жизни</p>
       </div>
       <div class="dont-card">
         <div class="x-icon">&#10005;</div>
-        <p>We don't sell courses on oversaturated markets</p>
+        <p>Мы не продаём курсы на перенасыщенных рынках</p>
       </div>
       <div class="dont-card">
         <div class="x-icon">&#10005;</div>
-        <p>We don't focus on schemes that don't work</p>
+        <p>Мы не фокусируемся на левых темах, которые не работают</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================ -->
-<!-- THE ESSENCE -->
-<!-- ============================================ -->
+<!-- ====== СУТЬ ====== -->
 <section class="section-navy">
   <div class="container">
-    <div class="text-center fade-up" style="margin-bottom:50px;">
-      <span class="float-tag">The Essence</span>
-      <h2>Why this method <span class="gradient-text">actually works</span></h2>
+    <div class="text-center fade-up" style="margin-bottom:44px;">
+      <span class="float-tag">В чём суть</span>
+      <h2>Почему этот метод <span class="gradient-text">действительно работает</span></h2>
     </div>
     <div class="essence-content fade-up">
-      <p>The world is rapidly moving online. Today, hundreds of thousands of companies in the West, especially in the US, are growing their businesses in the digital space. And with this comes a growing demand for <strong>responsible, proactive, and organized specialists</strong> who can help with everyday tasks.</p>
-      <p>The problem is that many business owners lack <strong>reliable team members</strong> they can truly count on. They need assistants who can take responsibility, work consistently, and get things done.</p>
-      <p>And that's where <strong class="text-gold">you come in</strong> &mdash; someone who truly wants to work, grow, and deliver results. You're ready to do quality work, learn new things, and respect the work &mdash; yours and others'. For an employer, this is invaluable.</p>
-      <p>Here's the secret to success: <strong>you're not just looking for a job &mdash; you're solving a real problem for the employer</strong>. When they see this, everything changes. They start trusting you more, give you new tasks, increase your pay, and build long-term relationships with you.</p>
+      <p>Мир стремительно переходит в онлайн. Сегодня сотни тысяч компаний на Западе, особенно в США, развивают свои бизнесы в цифровом пространстве. И вместе с этим растёт спрос на <strong>ответственных, проактивных и организованных специалистов</strong>, которые могут помочь им с ежедневными задачами.</p>
+      <p>Проблема в том, что многим владельцам бизнесов не хватает <strong>надёжных людей в команде</strong> &mdash; тех, на кого можно по-настоящему положиться. Им нужны помощники, способные брать ответственность, работать стабильно и доводить дела до конца.</p>
+      <p>И вот тут появляешься <strong class="text-gold">ты</strong> &mdash; человек, который действительно хочет работать, развиваться и приносить результат. Ты готов выполнять задачи качественно, учиться новому и уважать труд &mdash; свой и чужой. Для работодателя это бесценно.</p>
+      <p>Вот в этом и заключается секрет успеха: <strong>ты не просто ищешь работу &mdash; ты решаешь реальную проблему работодателя</strong>. Когда он это видит &mdash; всё меняется. Он начинает доверять тебе больше, поручает новые задачи, увеличивает оплату и выстраивает с тобой долгосрочные отношения.</p>
     </div>
 
-    <div class="insights-grid fade-up" style="margin-top:60px;">
+    <div class="insights-grid fade-up" style="margin-top:50px;">
       <div class="insight-card">
         <span class="emoji">&#128176;</span>
-        <h4>Can you earn a lot from this?</h4>
-        <p>Yes. The average rate in the US is about $22/hour, and even at $7&ndash;$12/hour you earn well.</p>
+        <h4>Можно ли на этом зарабатывать много?</h4>
+        <p>Да. Средняя ставка в США &mdash; около $22 в час, а даже при $7&ndash;$12 в час ты зарабатываешь достойно.</p>
       </div>
       <div class="insight-card">
         <span class="emoji">&#127482;&#127480;</span>
-        <h4>Do American companies need me?</h4>
-        <p>Yes. They lack reliable specialists. You're exactly the person they can count on.</p>
+        <h4>Нужен ли я американским компаниям?</h4>
+        <p>Да. Им не хватает надёжных специалистов. Ты &mdash; именно тот человек, на кого можно положиться.</p>
       </div>
       <div class="insight-card">
         <span class="emoji">&#9876;&#65039;</span>
-        <h4>Is the competition high?</h4>
-        <p>No. On the contrary, you can easily stand out with quality, responsibility, and communication.</p>
+        <h4>Большая ли конкуренция?</h4>
+        <p>Нет. Наоборот, ты можешь легко выделиться качеством, ответственностью и коммуникацией.</p>
       </div>
       <div class="insight-card">
         <span class="emoji">&#128483;&#65039;</span>
-        <h4>What if I don't know English?</h4>
-        <p>Don't worry. In my system, I explain how to start looking for employers now and improve your language in parallel.</p>
+        <h4>А если я не знаю английский?</h4>
+        <p>Не страшно. В моей системе я рассказываю, как начать искать работодателя уже сейчас и где подтянуть язык параллельно.</p>
       </div>
       <div class="insight-card">
         <span class="emoji">&#128173;</span>
-        <h4>What if I'm not confident?</h4>
-        <p>It happens to everyone. The main thing is to start acting. My methods are simple and clear even for beginners.</p>
+        <h4>А если я не уверен в себе?</h4>
+        <p>Так бывает со всеми. Главное &mdash; начать действовать. Мои методы просты и понятны даже новичкам.</p>
       </div>
       <div class="insight-card">
         <span class="emoji">&#128640;</span>
-        <h4>Why does this method work?</h4>
-        <p>Because it's based on real experience and mutual benefit. You find an employer who needs a reliable assistant and simply do your job well.</p>
+        <h4>Почему этот метод работает?</h4>
+        <p>Потому что он основан на реальном опыте и взаимной пользе. Ты находишь работодателя и просто делаешь свою работу хорошо.</p>
       </div>
     </div>
     <div class="spacer-md"></div>
     <div class="text-center">
-      <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-primary">Test your readiness and get recommendations</a>
+      <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-primary">Пройти тест и получить рекомендации</a>
     </div>
   </div>
 </section>
 
-<!-- ============================================ -->
-<!-- PERSONAL JOURNEY TIMELINE -->
-<!-- ============================================ -->
+<!-- ====== ЛИЧНАЯ ИСТОРИЯ ====== -->
 <section class="section-dark">
   <div class="container">
-    <div class="text-center fade-up" style="margin-bottom:60px;">
-      <span class="float-tag">My Journey</span>
-      <h2>From <span style="color:#e93d3d;">zero</span> to <span class="gradient-text">freedom</span></h2>
-      <p style="max-width:600px;margin:16px auto 0;">The real story behind SmartWorker &mdash; from debt and burnout to a system that changed everything.</p>
+    <div class="text-center fade-up" style="margin-bottom:50px;">
+      <span class="float-tag">Мой путь</span>
+      <h2>От <span style="color:#e93d3d;">нуля</span> до <span class="gradient-text">свободы</span></h2>
+      <p style="max-width:600px;margin:14px auto 0;">Реальная история за SmartWorker &mdash; от долгов и выгорания до системы, которая изменила всё.</p>
     </div>
 
     <div class="journey-grid fade-up">
       <div class="timeline">
         <div class="timeline-item">
-          <h4>Who I Was Before</h4>
-          <p>Before SmartWorker, my life was a constant race for money &mdash; loans, debts, and the eternal feeling of not getting anywhere. Working non-stop but staying in the same place &mdash; exhausted and feeling like life was passing by.</p>
-          <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/68f69b261cdee648a8ee8bd8.png" alt="Before SmartWorker" class="timeline-image">
+          <h4>Кем я был раньше</h4>
+          <p>До SmartWorker моя жизнь выглядела примерно так: постоянная гонка за деньгами, кредиты, долги и вечное чувство, что я просто не продвигаюсь вперёд. Работал без остановки, но всё равно оставался на месте.</p>
+          <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/68f69b261cdee648a8ee8bd8.png" alt="До SmartWorker" class="timeline-image">
         </div>
         <div class="timeline-item">
-          <h4>The Turning Point</h4>
-          <p>I was 24, living in Atlanta, Georgia, during the COVID pandemic. No money, no way to earn. I tried everything: dropshipping, Amazon, crypto &mdash; each time hoping "this time it'll work." But instead of success, I got more debt.</p>
+          <h4>Переломный момент</h4>
+          <p>Мне было 24 года, я жил в Атланте, штат Джорджия, и это был период пандемии COVID. У меня не было денег. Я пробовал всё: дропшиппинг, Amazon, криптовалюту &mdash; каждый раз надеялся, что &laquo;вот теперь точно получится&raquo;. Но вместо успеха &mdash; новые долги.</p>
         </div>
         <div class="timeline-item">
-          <h4>The Call That Changed Everything</h4>
-          <p>One day, an employer from a Virginia-based company called me and offered online work at <strong class="text-gold">$15/hour</strong>. I couldn't believe my ears. At that time, my family was living on food stamps. That call became my turning point.</p>
+          <h4>Звонок, который изменил всё</h4>
+          <p>Однажды мне позвонил работодатель из компании, базирующейся в Вирджинии. Он предложил онлайн-работу с оплатой <strong class="text-gold">$15 в час</strong>. Я не поверил своим ушам. На тот момент мы с семьёй жили на талоны на еду. Этот звонок стал для меня переломным моментом.</p>
         </div>
         <div class="timeline-item">
-          <h4>How Everything Changed</h4>
-          <p>I got the $15/hour job. From that moment, things started to change. I began paying off debts, and soon helped my wife get hired by the same employer. During COVID, when everything around had frozen, we finally started earning stable money.</p>
-          <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/68f69cac462193445dad64f7.png" alt="Life Changed" class="timeline-image">
+          <h4>Как всё изменилось</h4>
+          <p>Я получил работу с оплатой $15 в час. С этого момента всё стало постепенно меняться. Я начал закрывать долги, а вскоре помог устроиться к тому же работодателю и своей жене. Мы наконец начали зарабатывать стабильные деньги.</p>
+          <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/68f69cac462193445dad64f7.png" alt="Жизнь изменилась" class="timeline-image">
         </div>
       </div>
 
       <div>
-        <div class="glass-card" style="margin-bottom:30px;">
-          <h4 style="margin-bottom:16px;">What I Learned Over Time</h4>
-          <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/68f69d7d22a7234a07d3b194.png" alt="Growth" class="rounded-img" style="margin-bottom:20px;">
-          <p>Years passed. I've now helped dozens of people from different countries get jobs. During this time, I deeply understood how the hiring process works in the West.</p>
-          <ul class="feature-list" style="margin-top:20px;">
-            <li><span class="icon">&#10003;</span> How American employers think</li>
-            <li><span class="icon">&#10003;</span> What they truly look for in candidates</li>
-            <li><span class="icon">&#10003;</span> How to ask for a raise</li>
-            <li><span class="icon">&#10003;</span> How to negotiate projects</li>
-            <li><span class="icon">&#10003;</span> How to build trust and long-term relationships</li>
+        <div class="glass-card" style="margin-bottom:24px;">
+          <h4 style="margin-bottom:14px;">Что я понял за годы</h4>
+          <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/68f69d7d22a7234a07d3b194.png" alt="Рост" class="rounded-img" style="margin-bottom:18px;">
+          <p>Прошли годы. Теперь я помог устроиться на работу десяткам людей из разных стран. И за это время я глубоко понял, как устроен процесс найма на Западе.</p>
+          <ul class="feature-list" style="margin-top:16px;">
+            <li><span class="icon">&#10003;</span> Как мыслят американские работодатели</li>
+            <li><span class="icon">&#10003;</span> Чего они действительно ищут в кандидатах</li>
+            <li><span class="icon">&#10003;</span> Как просить о повышении</li>
+            <li><span class="icon">&#10003;</span> Как договариваться о проектах</li>
+            <li><span class="icon">&#10003;</span> Как выстраивать доверие и долгосрочные отношения</li>
           </ul>
-          <p style="margin-top:20px;">I learned to see things through their eyes &mdash; and that became the key that opened the door to a stable, profitable career.</p>
+          <p style="margin-top:16px;">Я научился смотреть на ситуацию их глазами &mdash; и именно это стало ключом к стабильной и прибыльной карьере.</p>
         </div>
 
         <div class="glass-card glass-card-green">
-          <h4 style="margin-bottom:12px;">The System &mdash; Refined Over Years</h4>
-          <p>Years of study, testing, failures, and thousands of employer interviews led to one simple conclusion: <strong class="text-white">all of this can be systematized</strong>.</p>
-          <p style="margin-top:12px;">I went through mistakes, supplemented and adjusted the approach, tested hypotheses in real interviews and projects &mdash; and the result is a polished, practical system. <strong class="text-gold">Now it's ready for you.</strong></p>
+          <h4 style="margin-bottom:10px;">Система &mdash; отшлифованная годами</h4>
+          <p>Годы изучения, тестов, неудач и тысяч интервью с работодателями привели к одному простому выводу: <strong class="text-white">всё это можно систематизировать</strong>.</p>
+          <p style="margin-top:10px;">Я прошёл через ошибки, дополнял и корректировал подход, проверял гипотезы на реальных собеседованиях &mdash; и в итоге получилась отшлифованная, практичная система. <strong class="text-gold">Теперь она готова для тебя.</strong></p>
         </div>
       </div>
     </div>
 
     <div class="spacer-lg"></div>
     <div class="text-center">
-      <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-primary">Start your path to remote work</a>
+      <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-primary">Начать путь к удалённой работе</a>
     </div>
   </div>
 </section>
 
-<!-- ============================================ -->
-<!-- WHAT YOU GET - STEPS -->
-<!-- ============================================ -->
+<!-- ====== ШАГИ ====== -->
 <section class="section-navy">
   <div class="container">
-    <div class="text-center fade-up" style="margin-bottom:50px;">
-      <h2>A clear <span class="gradient-text">step-by-step</span> methodology</h2>
-      <p style="max-width:600px;margin:16px auto 0;">Every part &mdash; from finding an employer to negotiating pay &mdash; is described and proven in practice.</p>
+    <div class="text-center fade-up" style="margin-bottom:40px;">
+      <h2>Чёткая <span class="gradient-text">пошаговая</span> методика</h2>
+      <p style="max-width:600px;margin:14px auto 0;">Каждая часть &mdash; от поиска работодателя до переговоров об оплате &mdash; описана и проверена на практике.</p>
     </div>
     <div class="step-grid fade-up">
       <div class="step-card">
         <div class="step-num">1</div>
-        <h4>Find Employers</h4>
-        <p>Learn where to look and how to reach out to US companies that need remote workers</p>
+        <h4>Найди работодателя</h4>
+        <p>Узнай, где искать и как обращаться к компаниям из США, которым нужны удалённые сотрудники</p>
       </div>
       <div class="step-card">
         <div class="step-num">2</div>
-        <h4>Present Yourself</h4>
-        <p>Master the art of professional self-presentation that stands out to Western employers</p>
+        <h4>Презентуй себя</h4>
+        <p>Освой искусство профессиональной самопрезентации, которая выделяет тебя среди других</p>
       </div>
       <div class="step-card">
         <div class="step-num">3</div>
-        <h4>Land the Job</h4>
-        <p>Ace interviews, negotiate rates, and secure your first client or position</p>
+        <h4>Получи работу</h4>
+        <p>Пройди интервью, договорись о ставке и получи своего первого клиента или позицию</p>
       </div>
       <div class="step-card">
         <div class="step-num">4</div>
-        <h4>Grow &amp; Scale</h4>
-        <p>Build long-term relationships, increase your rates, and expand your career internationally</p>
+        <h4>Расти и масштабируй</h4>
+        <p>Выстраивай долгосрочные отношения, повышай ставку и развивай карьеру на международном уровне</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================ -->
-<!-- EVALUATE CHANCES -->
-<!-- ============================================ -->
-<section class="section-dark" style="padding:80px 0;">
+<!-- ====== ОЦЕНКА ШАНСОВ ====== -->
+<section class="section-dark" style="padding:70px 0;">
   <div class="container text-center fade-up">
-    <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-green" style="font-size:1.1rem;padding:20px 50px;">Evaluate your chances of getting into the program</a>
+    <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-green" style="font-size:clamp(0.9rem,2.5vw,1.1rem);padding:20px 44px;">Оценить свои шансы попасть в программу</a>
   </div>
 </section>
 
-<!-- ============================================ -->
-<!-- FINAL CTA -->
-<!-- ============================================ -->
-<section class="cta-section section-navy" style="padding:120px 0;">
+<!-- ====== ФИНАЛЬНЫЙ CTA ====== -->
+<section class="cta-section section-navy" style="padding:100px 0;">
   <div class="bg-glow bg-glow-gold" style="top:50%;left:50%;transform:translate(-50%,-50%)"></div>
   <div class="bg-grid"></div>
   <div class="container">
     <div class="cta-card scale-in">
-      <h2>Ready to take the <span class="gradient-text">first step</span>?</h2>
-      <p style="font-size:1.1rem;">If you're ready to act &mdash; start with the first step. Use the system consistently, do what it says, and over time you'll see changes. I'm here to help &mdash; and on this path, you're not alone.</p>
-      <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-primary btn-glow" style="font-size:1.15rem;padding:20px 50px;">Find out what step suits you next</a>
+      <h2>Готов сделать <span class="gradient-text">первый шаг</span>?</h2>
+      <p style="font-size:clamp(0.95rem,2.5vw,1.1rem);">Если ты готов действовать &mdash; начни с первого шага. Воспользуйся системой последовательно, делай то, что в ней написано, и со временем увидишь изменения. Я здесь, чтобы помочь &mdash; и с этим путём ты не один.</p>
+      <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-primary btn-glow" style="font-size:clamp(0.9rem,2.5vw,1.1rem);padding:20px 44px;">Узнать, какой шаг подойдёт вам дальше</a>
     </div>
   </div>
 </section>
 
-<!-- ============================================ -->
-<!-- FOOTER -->
-<!-- ============================================ -->
+<!-- ====== FOOTER ====== -->
 <footer>
   <div class="container">
     <p>Copyrights 2025 | SmartWorker&trade; | <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true">Terms &amp; Conditions</a></p>
   </div>
 </footer>
 
-<!-- ============================================ -->
-<!-- SCRIPTS -->
-<!-- ============================================ -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Scroll-triggered animations
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
-  document.querySelectorAll('.fade-up, .fade-left, .fade-right, .scale-in').forEach(function(el) {
-    observer.observe(el);
-  });
-
-  // Staggered animation for grid children
-  document.querySelectorAll('.insights-grid .insight-card, .step-grid .step-card, .dont-grid .dont-card').forEach(function(card, index) {
-    card.style.transitionDelay = (index * 0.1) + 's';
-    card.classList.add('fade-up');
-    observer.observe(card);
-  });
-
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      var target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
+document.addEventListener('DOMContentLoaded',function(){
+  var o=new IntersectionObserver(function(e){e.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('visible');o.unobserve(entry.target)}})},{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.fade-up,.fade-left,.fade-right,.scale-in').forEach(function(el){o.observe(el)});
+  document.querySelectorAll('.insights-grid .insight-card,.step-grid .step-card,.dont-grid .dont-card').forEach(function(c,i){c.style.transitionDelay=(i*0.08)+'s';c.classList.add('fade-up');o.observe(c)});
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
 });
 </script>
 
