@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1000">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700;800;900&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{width:1000px;height:1000px;overflow:hidden;font-family:'Inter Tight',sans-serif;background:#0A0F1C;position:relative;}
+
+  .border-frame{position:absolute;inset:16px;border:2px solid rgba(255,214,66,0.2);border-radius:24px;pointer-events:none;z-index:3;}
+  .corner{position:absolute;width:40px;height:40px;z-index:4;}
+  .corner-tl{top:16px;left:16px;border-top:4px solid #FFD642;border-left:4px solid #FFD642;border-radius:24px 0 0 0;}
+  .corner-tr{top:16px;right:16px;border-top:4px solid #FFD642;border-right:4px solid #FFD642;border-radius:0 24px 0 0;}
+  .corner-bl{bottom:16px;left:16px;border-bottom:4px solid #FFD642;border-left:4px solid #FFD642;border-radius:0 0 0 24px;}
+  .corner-br{bottom:16px;right:16px;border-bottom:4px solid #FFD642;border-right:4px solid #FFD642;border-radius:0 0 24px 0;}
+
+  .glow1{position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:600px;height:400px;background:#FFD642;border-radius:50%;filter:blur(180px);opacity:0.08;}
+
+  .content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;padding:80px 70px;text-align:center;}
+
+  .logo{margin-bottom:20px;}
+  .logo span:first-child{font-weight:900;font-size:36px;color:#fff;letter-spacing:-0.03em;}
+  .logo span:last-child{font-weight:900;font-size:36px;color:#FFD642;letter-spacing:-0.03em;}
+
+  .alert-icon{width:100px;height:100px;border-radius:50%;background:rgba(255,214,66,0.1);border:2px solid rgba(255,214,66,0.3);display:flex;align-items:center;justify-content:center;font-size:52px;margin:0 auto 28px;animation:breathe 3s ease-in-out infinite;}
+  @keyframes breathe{0%,100%{box-shadow:0 0 0 0 rgba(255,214,66,0.2)}50%{box-shadow:0 0 0 20px rgba(255,214,66,0)}}
+
+  h1{font-weight:900;font-size:72px;color:#FFD642;letter-spacing:-0.04em;line-height:1;margin-bottom:10px;text-transform:uppercase;}
+  .seats{font-weight:900;font-size:120px;color:#fff;letter-spacing:-0.05em;line-height:0.9;margin:10px 0;}
+  .seats-label{font-size:32px;font-weight:700;color:#8893A8;letter-spacing:0.02em;}
+
+  .divider{width:80px;height:3px;background:linear-gradient(90deg,transparent,#FFD642,transparent);margin:30px auto;}
+
+  .desc{font-size:26px;color:#c0c8d8;line-height:1.55;max-width:650px;}
+  .desc strong{color:#fff;}
+
+  .timer-row{display:flex;gap:16px;margin-top:36px;}
+  .timer-box{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:14px;width:110px;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+  .timer-num{font-weight:900;font-size:46px;color:#FFD642;letter-spacing:-0.02em;line-height:1;}
+  .timer-label{font-size:14px;color:#8893A8;margin-top:4px;text-transform:uppercase;letter-spacing:0.1em;}
+
+  .cta{margin-top:36px;background:#FFD642;color:#0A0F1C;font-weight:800;font-size:24px;padding:22px 52px;border-radius:14px;box-shadow:0 0 60px rgba(255,214,66,0.25);}
+</style>
+</head>
+<body>
+  <div class="border-frame"></div>
+  <div class="corner corner-tl"></div>
+  <div class="corner corner-tr"></div>
+  <div class="corner corner-bl"></div>
+  <div class="corner corner-br"></div>
+  <div class="glow1"></div>
+
+  <div class="content">
+    <div class="logo"><span>Smart</span><span>Worker</span></div>
+    <div class="alert-icon">⏰</div>
+    <h1>Осталось</h1>
+    <div class="seats">7 мест</div>
+    <div class="seats-label">в текущем потоке обучения</div>
+    <div class="divider"></div>
+    <p class="desc">Следующий набор — через <strong>2 месяца</strong>.<br>Успей занять место прямо сейчас.</p>
+    <div class="timer-row">
+      <div class="timer-box"><div class="timer-num">02</div><div class="timer-label">дня</div></div>
+      <div class="timer-box"><div class="timer-num">14</div><div class="timer-label">часов</div></div>
+      <div class="timer-box"><div class="timer-num">37</div><div class="timer-label">минут</div></div>
+    </div>
+    <div class="cta">Забронировать место →</div>
+  </div>
+</body>
+</html>

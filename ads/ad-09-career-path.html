@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1000">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700;800;900&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{width:1000px;height:1000px;overflow:hidden;font-family:'Inter Tight',sans-serif;background:#0A0F1C;position:relative;}
+
+  .bg-lines{position:absolute;inset:0;overflow:hidden;}
+  .bg-lines::before{content:'';position:absolute;top:50%;left:-200px;right:-200px;height:600px;transform:translateY(-50%);background:repeating-linear-gradient(90deg,transparent,transparent 98px,rgba(255,214,66,0.04) 98px,rgba(255,214,66,0.04) 100px);pointer-events:none;}
+  .glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:500px;background:#FFD642;border-radius:50%;filter:blur(200px);opacity:0.06;}
+
+  .content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;height:100%;padding:50px 60px;text-align:center;}
+
+  .logo{margin-bottom:16px;}
+  .logo span:first-child{font-weight:900;font-size:36px;color:#fff;letter-spacing:-0.03em;}
+  .logo span:last-child{font-weight:900;font-size:36px;color:#FFD642;letter-spacing:-0.03em;}
+
+  h1{font-weight:900;font-size:54px;color:#fff;letter-spacing:-0.04em;line-height:1.08;margin:8px 0 8px;}
+  h1 em{font-style:normal;color:#FFD642;}
+  .sub{font-size:22px;color:#8893A8;margin-bottom:28px;}
+
+  .timeline{display:flex;flex-direction:column;gap:0;width:100%;max-width:700px;position:relative;text-align:left;}
+  .timeline::before{content:'';position:absolute;top:30px;bottom:30px;left:36px;width:3px;background:linear-gradient(to bottom,#FFD642,#37ca37);border-radius:2px;}
+
+  .step{display:flex;align-items:center;gap:24px;padding:16px 0;position:relative;}
+  .step-num{width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:28px;flex-shrink:0;position:relative;z-index:2;}
+  .step-1 .step-num{background:rgba(255,214,66,0.15);border:2px solid rgba(255,214,66,0.4);color:#FFD642;}
+  .step-2 .step-num{background:rgba(255,214,66,0.1);border:2px solid rgba(255,214,66,0.3);color:#FFD642;}
+  .step-3 .step-num{background:rgba(55,202,55,0.1);border:2px solid rgba(55,202,55,0.3);color:#37ca37;}
+  .step-4 .step-num{background:rgba(55,202,55,0.15);border:2px solid rgba(55,202,55,0.4);color:#37ca37;}
+
+  .step-content h3{font-size:24px;font-weight:700;color:#fff;margin-bottom:4px;letter-spacing:-0.01em;}
+  .step-content p{font-size:18px;color:#8893A8;line-height:1.4;}
+  .step-content .time{font-size:15px;color:#FFD642;font-weight:600;margin-top:2px;}
+
+  .cta{margin-top:28px;background:#FFD642;color:#0A0F1C;font-weight:800;font-size:24px;padding:22px 52px;border-radius:14px;box-shadow:0 0 60px rgba(255,214,66,0.25);}
+</style>
+</head>
+<body>
+  <div class="bg-lines"></div>
+  <div class="glow"></div>
+  <div class="content">
+    <div class="logo"><span>Smart</span><span>Worker</span></div>
+    <h1>От нуля до <em>$1 000+/мес</em><br>за 4 шага</h1>
+    <p class="sub">Понятный путь к удалённой работе с западными компаниями</p>
+    <div class="timeline">
+      <div class="step step-1">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <h3>Пройди отбор</h3>
+          <p>Бесплатная анкета + консультация с экспертом</p>
+          <div class="time">🕐 10 минут</div>
+        </div>
+      </div>
+      <div class="step step-2">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <h3>Обучение</h3>
+          <p>Освой навыки виртуального ассистента с наставником</p>
+          <div class="time">📅 4–8 недель</div>
+        </div>
+      </div>
+      <div class="step step-3">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <h3>Трудоустройство</h3>
+          <p>Мы помогаем найти первого клиента из США или Европы</p>
+          <div class="time">🎯 2–4 недели</div>
+        </div>
+      </div>
+      <div class="step step-4">
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <h3>Первый доход в $</h3>
+          <p>Получаешь оплату в долларах, работая из дома</p>
+          <div class="time">💰 $1 000–3 000/мес</div>
+        </div>
+      </div>
+    </div>
+    <div class="cta">Начать с первого шага →</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1000">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700;800;900&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{width:1000px;height:1000px;overflow:hidden;font-family:'Inter Tight',sans-serif;background:#0A0F1C;position:relative;}
+
+  .top-half{position:absolute;top:0;left:0;right:0;height:460px;background:linear-gradient(180deg,#12091f 0%,#0A0F1C 100%);overflow:hidden;}
+  .top-half .glow{position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:500px;height:400px;background:#ff4757;border-radius:50%;filter:blur(150px);opacity:0.08;}
+
+  .bottom-half{position:absolute;bottom:0;left:0;right:0;height:540px;background:#0A0F1C;overflow:hidden;}
+  .bottom-half .glow{position:absolute;bottom:-100px;left:50%;transform:translateX(-50%);width:500px;height:400px;background:#37ca37;border-radius:50%;filter:blur(150px);opacity:0.1;}
+
+  .divider-line{position:absolute;top:460px;left:60px;right:60px;height:2px;background:linear-gradient(90deg,transparent,rgba(255,214,66,0.4),transparent);z-index:5;}
+  .divider-badge{position:absolute;top:440px;left:50%;transform:translateX(-50%);background:#FFD642;color:#0A0F1C;font-weight:900;font-size:22px;padding:12px 32px;border-radius:50px;z-index:6;letter-spacing:0.05em;}
+
+  .top-content,.bottom-content{position:relative;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 70px;height:100%;}
+
+  .top-content h2{font-weight:800;font-size:52px;color:#ff6b6b;letter-spacing:-0.03em;line-height:1.15;margin-bottom:16px;}
+  .top-content h2 span{color:#fff;}
+
+  .pain-items{display:flex;flex-direction:column;gap:12px;margin-top:8px;}
+  .pain-item{display:flex;align-items:center;gap:12px;font-size:24px;color:#c0c8d8;}
+  .pain-item .x{color:#ff6b6b;font-weight:800;font-size:20px;width:32px;height:32px;border-radius:8px;background:rgba(255,80,80,0.1);border:1px solid rgba(255,80,80,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+
+  .bottom-content h2{font-weight:800;font-size:48px;color:#37ca37;letter-spacing:-0.03em;line-height:1.15;margin-bottom:6px;}
+  .bottom-content .sub{font-size:24px;color:#8893A8;margin-bottom:16px;}
+  .solution-items{display:flex;flex-direction:column;gap:12px;}
+  .sol-item{display:flex;align-items:center;gap:12px;font-size:24px;color:#c0c8d8;}
+  .sol-item .ck{color:#37ca37;font-weight:800;font-size:18px;width:32px;height:32px;border-radius:8px;background:rgba(55,202,55,0.1);border:1px solid rgba(55,202,55,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+
+  .logo{position:absolute;top:36px;left:50%;transform:translateX(-50%);z-index:10;}
+  .logo span:first-child{font-weight:900;font-size:32px;color:#fff;letter-spacing:-0.03em;}
+  .logo span:last-child{font-weight:900;font-size:32px;color:#FFD642;letter-spacing:-0.03em;}
+
+  .cta{position:absolute;bottom:44px;left:50%;transform:translateX(-50%);background:#FFD642;color:#0A0F1C;font-weight:800;font-size:22px;padding:20px 48px;border-radius:14px;z-index:10;box-shadow:0 0 50px rgba(255,214,66,0.2);white-space:nowrap;}
+</style>
+</head>
+<body>
+  <div class="logo"><span>Smart</span><span>Worker</span></div>
+
+  <div class="top-half">
+    <div class="glow"></div>
+    <div class="top-content">
+      <h2 style="margin-top:40px;"><span>Устал от</span> низкой<br>зарплаты<span>?</span></h2>
+      <div class="pain-items">
+        <div class="pain-item"><div class="x">✕</div><span>Нет роста на текущей работе</span></div>
+        <div class="pain-item"><div class="x">✕</div><span>Зарплата не покрывает расходы</span></div>
+        <div class="pain-item"><div class="x">✕</div><span>Жизнь проходит в офисе</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider-line"></div>
+  <div class="divider-badge">ЕСТЬ РЕШЕНИЕ</div>
+
+  <div class="bottom-half">
+    <div class="glow"></div>
+    <div class="bottom-content">
+      <h2 style="margin-top:20px;">Работай с зарубежными<br>компаниями удалённо</h2>
+      <p class="sub">SmartWorker обучает и трудоустраивает</p>
+      <div class="solution-items">
+        <div class="sol-item"><div class="ck">✓</div><span>Доход от $1 000 в месяц</span></div>
+        <div class="sol-item"><div class="ck">✓</div><span>Работа из любой точки мира</span></div>
+        <div class="sol-item"><div class="ck">✓</div><span>Без опыта — мы всему научим</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">Пройти бесплатный отбор →</div>
+</body>
+</html>
