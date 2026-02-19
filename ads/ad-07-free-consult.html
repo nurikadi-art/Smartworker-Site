@@ -2,73 +2,51 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1000">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700;800;900&display=swap');
   *{margin:0;padding:0;box-sizing:border-box;}
-  body{width:1000px;height:1000px;overflow:hidden;font-family:'Inter Tight',sans-serif;background:#0A0F1C;position:relative;}
-
-  .bg-radial{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(55,202,55,0.07) 0%,transparent 55%);}
-  .glow{position:absolute;top:60px;right:80px;width:300px;height:300px;background:#FFD642;border-radius:50%;filter:blur(140px);opacity:0.07;}
-
-  .content{position:relative;z-index:2;display:flex;flex-direction:column;height:100%;padding:60px 70px;}
-
-  .top{text-align:center;}
-  .logo{margin-bottom:16px;}
-  .logo span:first-child{font-weight:900;font-size:36px;color:#fff;letter-spacing:-0.03em;}
-  .logo span:last-child{font-weight:900;font-size:36px;color:#FFD642;letter-spacing:-0.03em;}
-
-  .free-badge{display:inline-block;background:linear-gradient(135deg,#FFD642,#f5c518);color:#0A0F1C;font-weight:900;font-size:28px;padding:14px 40px;border-radius:14px;letter-spacing:0.02em;margin:20px 0 12px;box-shadow:0 0 60px rgba(255,214,66,0.3);text-transform:uppercase;}
-
-  h1{font-weight:900;font-size:64px;color:#fff;letter-spacing:-0.04em;line-height:1.05;margin:16px 0 12px;text-align:center;}
-  h1 em{font-style:normal;color:#37ca37;}
-  .sub{font-size:24px;color:#8893A8;text-align:center;margin-bottom:32px;line-height:1.5;}
-
-  .middle{flex:1;display:flex;gap:20px;align-items:stretch;}
-  .feature-card{flex:1;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:32px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;}
-  .feature-card .icon{width:60px;height:60px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:16px;}
-  .icon-gold{background:rgba(255,214,66,0.1);border:1px solid rgba(255,214,66,0.2);}
-  .icon-green{background:rgba(55,202,55,0.1);border:1px solid rgba(55,202,55,0.2);}
-  .icon-blue{background:rgba(24,139,246,0.1);border:1px solid rgba(24,139,246,0.2);}
-  .feature-card h3{font-size:20px;font-weight:700;color:#fff;margin-bottom:8px;letter-spacing:-0.01em;}
-  .feature-card p{font-size:17px;color:#8893A8;line-height:1.45;}
-
-  .bottom{text-align:center;padding-top:28px;}
-  .cta{display:inline-block;background:#FFD642;color:#0A0F1C;font-weight:800;font-size:26px;padding:22px 56px;border-radius:14px;box-shadow:0 0 60px rgba(255,214,66,0.25);}
-  .note{font-size:17px;color:#555d6e;margin-top:14px;}
+  html,body{width:1000px;height:1000px;overflow:hidden;font-family:'Inter Tight',sans-serif;background:#0A0F1C;}
 </style>
 </head>
 <body>
-  <div class="bg-radial"></div>
-  <div class="glow"></div>
-  <div class="content">
-    <div class="top">
-      <div class="logo"><span>Smart</span><span>Worker</span></div>
-      <div class="free-badge">Бесплатно</div>
-      <h1>Персональная<br>консультация по <em>карьере</em></h1>
-      <p class="sub">Узнайте, как начать зарабатывать удалённо за 20 минут</p>
+<div style="width:1000px;height:1000px;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(55,202,55,0.07) 0%,transparent 55%);"></div>
+  <div style="position:absolute;top:60px;right:80px;width:300px;height:300px;background:#FFD642;border-radius:50%;filter:blur(140px);opacity:0.07;"></div>
+
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;width:1000px;height:1000px;padding:60px 70px;">
+    <!-- Top -->
+    <div style="text-align:center;">
+      <div><span style="font-weight:900;font-size:36px;color:#fff;letter-spacing:-0.03em;">Smart</span><span style="font-weight:900;font-size:36px;color:#FFD642;letter-spacing:-0.03em;">Worker</span></div>
+      <div style="display:inline-block;background:linear-gradient(135deg,#FFD642,#f5c518);color:#0A0F1C;font-weight:900;font-size:28px;padding:14px 40px;border-radius:14px;margin:20px 0 12px;box-shadow:0 0 60px rgba(255,214,66,0.3);text-transform:uppercase;">Бесплатно</div>
+      <h1 style="font-weight:900;font-size:60px;color:#fff;letter-spacing:-0.04em;line-height:1.05;margin:16px 0 12px;">Персональная<br>консультация по <span style="color:#37ca37;">карьере</span></h1>
+      <p style="font-size:24px;color:#8893A8;margin-bottom:32px;line-height:1.5;">Узнайте, как начать зарабатывать удалённо за 20 минут</p>
     </div>
-    <div class="middle">
-      <div class="feature-card">
-        <div class="icon icon-gold">🎯</div>
-        <h3>Разбор навыков</h3>
-        <p>Определим ваше идеальное направление</p>
+
+    <!-- Cards -->
+    <div style="display:flex;gap:20px;flex:1;align-items:stretch;">
+      <div style="flex:1;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:32px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;">
+        <div style="width:60px;height:60px;border-radius:16px;background:rgba(255,214,66,0.1);border:1px solid rgba(255,214,66,0.2);display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:16px;">🎯</div>
+        <div style="font-size:20px;font-weight:700;color:#fff;margin-bottom:8px;">Разбор навыков</div>
+        <p style="font-size:17px;color:#8893A8;line-height:1.45;">Определим ваше идеальное направление</p>
       </div>
-      <div class="feature-card">
-        <div class="icon icon-green">📈</div>
-        <h3>План действий</h3>
-        <p>Пошаговая стратегия от нуля до первого клиента</p>
+      <div style="flex:1;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:32px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;">
+        <div style="width:60px;height:60px;border-radius:16px;background:rgba(55,202,55,0.1);border:1px solid rgba(55,202,55,0.2);display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:16px;">📈</div>
+        <div style="font-size:20px;font-weight:700;color:#fff;margin-bottom:8px;">План действий</div>
+        <p style="font-size:17px;color:#8893A8;line-height:1.45;">Пошаговая стратегия от нуля до первого клиента</p>
       </div>
-      <div class="feature-card">
-        <div class="icon icon-blue">💰</div>
-        <h3>Доход в $</h3>
-        <p>Реальные цифры и кейсы наших учеников</p>
+      <div style="flex:1;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:32px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;">
+        <div style="width:60px;height:60px;border-radius:16px;background:rgba(24,139,246,0.1);border:1px solid rgba(24,139,246,0.2);display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:16px;">💰</div>
+        <div style="font-size:20px;font-weight:700;color:#fff;margin-bottom:8px;">Доход в $</div>
+        <p style="font-size:17px;color:#8893A8;line-height:1.45;">Реальные цифры и кейсы наших учеников</p>
       </div>
     </div>
-    <div class="bottom">
-      <div class="cta">Записаться бесплатно →</div>
-      <p class="note">Осталось 12 слотов на этой неделе</p>
+
+    <!-- Bottom -->
+    <div style="text-align:center;padding-top:28px;">
+      <div style="display:inline-block;background:#FFD642;color:#0A0F1C;font-weight:800;font-size:26px;padding:22px 56px;border-radius:14px;box-shadow:0 0 60px rgba(255,214,66,0.25);">Записаться бесплатно →</div>
+      <p style="font-size:17px;color:#555d6e;margin-top:14px;">Осталось 12 слотов на этой неделе</p>
     </div>
   </div>
+</div>
 </body>
 </html>

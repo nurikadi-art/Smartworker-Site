@@ -2,69 +2,49 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1000">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700;800;900&display=swap');
   *{margin:0;padding:0;box-sizing:border-box;}
-  body{width:1000px;height:1000px;overflow:hidden;font-family:'Inter Tight',sans-serif;background:#0A0F1C;position:relative;}
-
-  .glow1{position:absolute;top:100px;left:100px;width:400px;height:400px;background:#FFD642;border-radius:50%;filter:blur(200px);opacity:0.06;}
-  .glow2{position:absolute;bottom:100px;right:100px;width:400px;height:400px;background:#37ca37;border-radius:50%;filter:blur(200px);opacity:0.06;}
-  .glow3{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:300px;height:300px;background:#189bf6;border-radius:50%;filter:blur(180px);opacity:0.05;}
-
-  .content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;padding:70px;text-align:center;}
-
-  .logo{margin-bottom:30px;}
-  .logo span:first-child{font-weight:900;font-size:36px;color:#fff;letter-spacing:-0.03em;}
-  .logo span:last-child{font-weight:900;font-size:36px;color:#FFD642;letter-spacing:-0.03em;}
-
-  h1{font-weight:900;font-size:60px;color:#fff;letter-spacing:-0.04em;line-height:1.08;margin-bottom:40px;}
-  h1 em{font-style:normal;background:linear-gradient(135deg,#FFD642,#37ca37);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-
-  .lifestyle-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;width:100%;max-width:760px;margin-bottom:40px;}
-  .ls-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:28px 24px;text-align:center;position:relative;}
-  .ls-card .big-emoji{font-size:48px;margin-bottom:14px;}
-  .ls-card h3{font-size:22px;font-weight:700;color:#fff;margin-bottom:6px;letter-spacing:-0.01em;}
-  .ls-card p{font-size:17px;color:#8893A8;line-height:1.4;}
-  .ls-card.highlight{background:rgba(255,214,66,0.06);border-color:rgba(255,214,66,0.2);}
-
-  .bottom-text{font-size:26px;color:#c0c8d8;line-height:1.5;max-width:650px;margin-bottom:32px;}
-  .bottom-text strong{color:#FFD642;}
-
-  .cta{background:#FFD642;color:#0A0F1C;font-weight:800;font-size:24px;padding:22px 52px;border-radius:14px;box-shadow:0 0 60px rgba(255,214,66,0.25);}
+  html,body{width:1000px;height:1000px;overflow:hidden;font-family:'Inter Tight',sans-serif;background:#0A0F1C;}
 </style>
 </head>
 <body>
-  <div class="glow1"></div>
-  <div class="glow2"></div>
-  <div class="glow3"></div>
-  <div class="content">
-    <div class="logo"><span>Smart</span><span>Worker</span></div>
-    <h1>Работай откуда<br>хочешь — <em>живи как<br>хочешь</em></h1>
-    <div class="lifestyle-grid">
-      <div class="ls-card">
-        <div class="big-emoji">🏠</div>
-        <h3>Из дома</h3>
-        <p>Никаких пробок и дресс-кода</p>
+<div style="width:1000px;height:1000px;position:relative;overflow:hidden;">
+  <div style="position:absolute;top:100px;left:100px;width:400px;height:400px;background:#FFD642;border-radius:50%;filter:blur(200px);opacity:0.06;"></div>
+  <div style="position:absolute;bottom:100px;right:100px;width:400px;height:400px;background:#37ca37;border-radius:50%;filter:blur(200px);opacity:0.06;"></div>
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:300px;height:300px;background:#189bf6;border-radius:50%;filter:blur(180px);opacity:0.05;"></div>
+
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;width:1000px;height:1000px;padding:70px;text-align:center;">
+    <div><span style="font-weight:900;font-size:36px;color:#fff;letter-spacing:-0.03em;">Smart</span><span style="font-weight:900;font-size:36px;color:#FFD642;letter-spacing:-0.03em;">Worker</span></div>
+
+    <h1 style="font-weight:900;font-size:60px;color:#fff;letter-spacing:-0.04em;line-height:1.08;margin:24px 0 40px;">Работай откуда<br>хочешь — <span style="background:linear-gradient(135deg,#FFD642,#37ca37);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">живи как<br>хочешь</span></h1>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;width:100%;max-width:760px;margin-bottom:36px;">
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:28px 24px;text-align:center;">
+        <div style="font-size:48px;margin-bottom:14px;">🏠</div>
+        <div style="font-size:22px;font-weight:700;color:#fff;margin-bottom:6px;">Из дома</div>
+        <p style="font-size:17px;color:#8893A8;line-height:1.4;">Никаких пробок и дресс-кода</p>
       </div>
-      <div class="ls-card">
-        <div class="big-emoji">🌴</div>
-        <h3>С моря</h3>
-        <p>Работай из Бали, Турции, Грузии</p>
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:28px 24px;text-align:center;">
+        <div style="font-size:48px;margin-bottom:14px;">🌴</div>
+        <div style="font-size:22px;font-weight:700;color:#fff;margin-bottom:6px;">С моря</div>
+        <p style="font-size:17px;color:#8893A8;line-height:1.4;">Работай из Бали, Турции, Грузии</p>
       </div>
-      <div class="ls-card">
-        <div class="big-emoji">☕</div>
-        <h3>Из кафе</h3>
-        <p>Ноутбук + Wi-Fi = офис</p>
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:28px 24px;text-align:center;">
+        <div style="font-size:48px;margin-bottom:14px;">☕</div>
+        <div style="font-size:22px;font-weight:700;color:#fff;margin-bottom:6px;">Из кафе</div>
+        <p style="font-size:17px;color:#8893A8;line-height:1.4;">Ноутбук + Wi-Fi = офис</p>
       </div>
-      <div class="ls-card highlight">
-        <div class="big-emoji">💵</div>
-        <h3>$1 000–3 000</h3>
-        <p>Доход в долларах ежемесячно</p>
+      <div style="background:rgba(255,214,66,0.06);border:1px solid rgba(255,214,66,0.2);border-radius:20px;padding:28px 24px;text-align:center;">
+        <div style="font-size:48px;margin-bottom:14px;">💵</div>
+        <div style="font-size:22px;font-weight:700;color:#fff;margin-bottom:6px;">$1 000–3 000</div>
+        <p style="font-size:17px;color:#8893A8;line-height:1.4;">Доход в долларах ежемесячно</p>
       </div>
     </div>
-    <p class="bottom-text">SmartWorker научит и <strong>трудоустроит</strong></p>
-    <div class="cta">Начать путь →</div>
+
+    <p style="font-size:26px;color:#c0c8d8;line-height:1.5;margin-bottom:28px;">SmartWorker научит и <strong style="color:#FFD642;">трудоустроит</strong></p>
+    <div style="background:#FFD642;color:#0A0F1C;font-weight:800;font-size:24px;padding:22px 52px;border-radius:14px;box-shadow:0 0 60px rgba(255,214,66,0.25);">Начать путь →</div>
   </div>
+</div>
 </body>
 </html>

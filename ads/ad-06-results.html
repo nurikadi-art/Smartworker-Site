@@ -2,82 +2,60 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1000">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700;800;900&display=swap');
   *{margin:0;padding:0;box-sizing:border-box;}
-  body{width:1000px;height:1000px;overflow:hidden;font-family:'Inter Tight',sans-serif;background:#0A0F1C;position:relative;}
-
-  .bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,rgba(255,214,66,0.06) 0%,transparent 60%);}
-  .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,214,66,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,214,66,0.03) 1px,transparent 1px);background-size:50px 50px;}
-
-  .content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;padding:60px 70px;text-align:center;}
-
-  .logo{margin-bottom:24px;}
-  .logo span:first-child{font-weight:900;font-size:36px;color:#fff;letter-spacing:-0.03em;}
-  .logo span:last-child{font-weight:900;font-size:36px;color:#FFD642;letter-spacing:-0.03em;}
-
-  .tag{display:inline-block;background:rgba(55,202,55,0.12);border:1.5px solid rgba(55,202,55,0.3);border-radius:50px;padding:10px 22px;font-size:16px;color:#37ca37;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:28px;}
-
-  h1{font-weight:900;font-size:58px;color:#fff;letter-spacing:-0.03em;line-height:1.1;margin-bottom:36px;}
-  h1 em{font-style:normal;color:#FFD642;}
-
-  .results-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;width:100%;max-width:760px;}
-  .result-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:32px 24px;text-align:left;position:relative;overflow:hidden;}
-  .result-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;}
-  .rc-gold::before{background:linear-gradient(90deg,#FFD642,transparent);}
-  .rc-green::before{background:linear-gradient(90deg,#37ca37,transparent);}
-  .rc-blue::before{background:linear-gradient(90deg,#189bf6,transparent);}
-  .rc-purple::before{background:linear-gradient(90deg,#a855f7,transparent);}
-
-  .result-card .emoji{font-size:36px;margin-bottom:12px;}
-  .result-card .name{font-size:22px;font-weight:700;color:#fff;margin-bottom:4px;}
-  .result-card .role{font-size:16px;color:#8893A8;margin-bottom:12px;}
-  .result-card .income{font-weight:900;font-size:36px;color:#FFD642;letter-spacing:-0.02em;}
-  .result-card .income-label{font-size:15px;color:#8893A8;}
-  .result-card .time{font-size:15px;color:#37ca37;font-weight:600;margin-top:8px;}
-
-  .cta{margin-top:36px;background:#FFD642;color:#0A0F1C;font-weight:800;font-size:24px;padding:22px 52px;border-radius:14px;box-shadow:0 0 60px rgba(255,214,66,0.25);}
+  html,body{width:1000px;height:1000px;overflow:hidden;font-family:'Inter Tight',sans-serif;background:#0A0F1C;}
 </style>
 </head>
 <body>
-  <div class="bg"></div>
-  <div class="grid"></div>
-  <div class="content">
-    <div class="logo"><span>Smart</span><span>Worker</span></div>
-    <div class="tag">Реальные результаты</div>
-    <h1>Наши ученики уже<br>зарабатывают <em>в долларах</em></h1>
-    <div class="results-grid">
-      <div class="result-card rc-gold">
-        <div class="emoji">👩‍💻</div>
-        <div class="name">Анна К.</div>
-        <div class="role">Виртуальный ассистент</div>
-        <div class="income">$2 200/мес</div>
-        <div class="time">За 3 месяца с нуля</div>
+<div style="width:1000px;height:1000px;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,rgba(255,214,66,0.06) 0%,transparent 60%);"></div>
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,214,66,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,214,66,0.03) 1px,transparent 1px);background-size:50px 50px;"></div>
+
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;width:1000px;height:1000px;padding:60px 70px;text-align:center;">
+    <div><span style="font-weight:900;font-size:36px;color:#fff;letter-spacing:-0.03em;">Smart</span><span style="font-weight:900;font-size:36px;color:#FFD642;letter-spacing:-0.03em;">Worker</span></div>
+    <div style="display:inline-block;background:rgba(55,202,55,0.12);border:1.5px solid rgba(55,202,55,0.3);border-radius:50px;padding:10px 22px;font-size:16px;color:#37ca37;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin:16px 0 20px;">Реальные результаты</div>
+
+    <h1 style="font-weight:900;font-size:52px;color:#fff;letter-spacing:-0.03em;line-height:1.1;margin-bottom:32px;">Наши ученики уже<br>зарабатывают <span style="color:#FFD642;">в долларах</span></h1>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;width:100%;max-width:760px;">
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:28px 24px;text-align:left;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#FFD642,transparent);"></div>
+        <div style="font-size:36px;margin-bottom:10px;">👩‍💻</div>
+        <div style="font-size:22px;font-weight:700;color:#fff;margin-bottom:2px;">Анна К.</div>
+        <div style="font-size:16px;color:#8893A8;margin-bottom:10px;">Виртуальный ассистент</div>
+        <div style="font-weight:900;font-size:34px;color:#FFD642;">$2 200/мес</div>
+        <div style="font-size:15px;color:#37ca37;font-weight:600;margin-top:6px;">За 3 месяца с нуля</div>
       </div>
-      <div class="result-card rc-green">
-        <div class="emoji">👨‍💻</div>
-        <div class="name">Дмитрий Р.</div>
-        <div class="role">Проект-менеджер</div>
-        <div class="income">$3 100/мес</div>
-        <div class="time">За 2 месяца обучения</div>
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:28px 24px;text-align:left;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#37ca37,transparent);"></div>
+        <div style="font-size:36px;margin-bottom:10px;">👨‍💻</div>
+        <div style="font-size:22px;font-weight:700;color:#fff;margin-bottom:2px;">Дмитрий Р.</div>
+        <div style="font-size:16px;color:#8893A8;margin-bottom:10px;">Проект-менеджер</div>
+        <div style="font-weight:900;font-size:34px;color:#FFD642;">$3 100/мес</div>
+        <div style="font-size:15px;color:#37ca37;font-weight:600;margin-top:6px;">За 2 месяца обучения</div>
       </div>
-      <div class="result-card rc-blue">
-        <div class="emoji">👩‍🎨</div>
-        <div class="name">Мария С.</div>
-        <div class="role">SMM-менеджер</div>
-        <div class="income">$1 800/мес</div>
-        <div class="time">Первый клиент за 6 недель</div>
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:28px 24px;text-align:left;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#189bf6,transparent);"></div>
+        <div style="font-size:36px;margin-bottom:10px;">👩‍🎨</div>
+        <div style="font-size:22px;font-weight:700;color:#fff;margin-bottom:2px;">Мария С.</div>
+        <div style="font-size:16px;color:#8893A8;margin-bottom:10px;">SMM-менеджер</div>
+        <div style="font-weight:900;font-size:34px;color:#FFD642;">$1 800/мес</div>
+        <div style="font-size:15px;color:#37ca37;font-weight:600;margin-top:6px;">Первый клиент за 6 недель</div>
       </div>
-      <div class="result-card rc-purple">
-        <div class="emoji">🧑‍💼</div>
-        <div class="name">Алексей В.</div>
-        <div class="role">Бизнес-ассистент</div>
-        <div class="income">$2 500/мес</div>
-        <div class="time">За 2.5 месяца с нуля</div>
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:28px 24px;text-align:left;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#a855f7,transparent);"></div>
+        <div style="font-size:36px;margin-bottom:10px;">🧑‍💼</div>
+        <div style="font-size:22px;font-weight:700;color:#fff;margin-bottom:2px;">Алексей В.</div>
+        <div style="font-size:16px;color:#8893A8;margin-bottom:10px;">Бизнес-ассистент</div>
+        <div style="font-weight:900;font-size:34px;color:#FFD642;">$2 500/мес</div>
+        <div style="font-size:15px;color:#37ca37;font-weight:600;margin-top:6px;">За 2.5 месяца с нуля</div>
       </div>
     </div>
-    <div class="cta">Хочу так же →</div>
+
+    <div style="margin-top:32px;background:#FFD642;color:#0A0F1C;font-weight:800;font-size:24px;padding:22px 52px;border-radius:14px;box-shadow:0 0 60px rgba(255,214,66,0.25);">Хочу так же →</div>
   </div>
+</div>
 </body>
 </html>

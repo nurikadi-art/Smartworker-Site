@@ -2,70 +2,46 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1000">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700;800;900&display=swap');
   *{margin:0;padding:0;box-sizing:border-box;}
-  body{width:1000px;height:1000px;overflow:hidden;font-family:'Inter Tight',sans-serif;background:#0A0F1C;position:relative;}
-
-  .split{display:flex;height:100%;}
-
-  .left,.right{flex:1;display:flex;flex-direction:column;justify-content:center;padding:60px 50px;position:relative;overflow:hidden;}
-
-  .left{background:#0d1222;}
-  .left::after{content:'';position:absolute;top:0;right:0;width:3px;height:100%;background:linear-gradient(to bottom,transparent,#FFD642,transparent);}
-
-  .right{background:#0A0F1C;}
-  .right::before{content:'';position:absolute;top:-100px;right:-80px;width:350px;height:350px;background:#37ca37;border-radius:50%;filter:blur(120px);opacity:0.12;}
-
-  .label{font-size:16px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:24px;padding:8px 18px;border-radius:50px;display:inline-block;}
-  .label-red{background:rgba(255,80,80,0.12);border:1.5px solid rgba(255,80,80,0.3);color:#ff6b6b;}
-  .label-green{background:rgba(55,202,55,0.12);border:1.5px solid rgba(55,202,55,0.3);color:#37ca37;}
-
-  .emoji{font-size:64px;margin-bottom:20px;}
-
-  .item{display:flex;align-items:center;gap:14px;margin-bottom:18px;}
-  .item .icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
-  .icon-red{background:rgba(255,80,80,0.1);border:1px solid rgba(255,80,80,0.2);}
-  .icon-green{background:rgba(55,202,55,0.1);border:1px solid rgba(55,202,55,0.2);}
-  .item span{font-size:21px;color:#c0c8d8;line-height:1.4;font-weight:500;}
-  .cross{color:#ff6b6b;}
-  .check{color:#37ca37;}
-
-  .big-text{font-weight:800;font-size:34px;color:#fff;letter-spacing:-0.02em;line-height:1.2;margin-top:16px;}
-  .big-text em{font-style:normal;color:#37ca37;}
-
-  .bottom-bar{position:absolute;bottom:0;left:0;right:0;background:rgba(255,214,66,0.06);border-top:1px solid rgba(255,214,66,0.15);padding:24px 50px;display:flex;justify-content:space-between;align-items:center;z-index:5;}
-  .logo span:first-child{font-weight:900;font-size:32px;color:#fff;letter-spacing:-0.03em;}
-  .logo span:last-child{font-weight:900;font-size:32px;color:#FFD642;letter-spacing:-0.03em;}
-  .cta-small{background:#FFD642;color:#0A0F1C;font-weight:800;font-size:20px;padding:16px 36px;border-radius:12px;}
+  html,body{width:1000px;height:1000px;overflow:hidden;font-family:'Inter Tight',sans-serif;background:#0A0F1C;}
 </style>
 </head>
 <body>
-  <div class="split">
-    <div class="left">
-      <div class="label label-red">Сейчас</div>
-      <div class="emoji">😩</div>
-      <div class="item"><div class="icon icon-red"><span class="cross">✕</span></div><span>Зарплата 40–60 тыс. ₽</span></div>
-      <div class="item"><div class="icon icon-red"><span class="cross">✕</span></div><span>Работа с 9 до 6 в офисе</span></div>
-      <div class="item"><div class="icon icon-red"><span class="cross">✕</span></div><span>Нет роста и перспектив</span></div>
-      <div class="item"><div class="icon icon-red"><span class="cross">✕</span></div><span>Потолок дохода</span></div>
-      <div class="item"><div class="icon icon-red"><span class="cross">✕</span></div><span>Зависимость от курса ₽</span></div>
+<div style="width:1000px;height:1000px;display:flex;flex-direction:column;position:relative;overflow:hidden;">
+  <div style="display:flex;flex:1;min-height:0;">
+    <!-- LEFT -->
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:60px 50px;background:#0d1222;position:relative;">
+      <div style="position:absolute;top:0;right:0;width:3px;height:100%;background:linear-gradient(to bottom,transparent,#FFD642,transparent);"></div>
+      <div style="display:inline-block;font-size:16px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;padding:8px 18px;border-radius:50px;background:rgba(255,80,80,0.12);border:1.5px solid rgba(255,80,80,0.3);color:#ff6b6b;margin-bottom:24px;align-self:flex-start;">Сейчас</div>
+      <div style="font-size:64px;margin-bottom:20px;">😩</div>
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;"><div style="width:36px;height:36px;border-radius:10px;background:rgba(255,80,80,0.1);border:1px solid rgba(255,80,80,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;color:#ff6b6b;flex-shrink:0;">✕</div><span style="font-size:21px;color:#c0c8d8;font-weight:500;">Зарплата 40–60 тыс. ₽</span></div>
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;"><div style="width:36px;height:36px;border-radius:10px;background:rgba(255,80,80,0.1);border:1px solid rgba(255,80,80,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;color:#ff6b6b;flex-shrink:0;">✕</div><span style="font-size:21px;color:#c0c8d8;font-weight:500;">Работа с 9 до 6 в офисе</span></div>
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;"><div style="width:36px;height:36px;border-radius:10px;background:rgba(255,80,80,0.1);border:1px solid rgba(255,80,80,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;color:#ff6b6b;flex-shrink:0;">✕</div><span style="font-size:21px;color:#c0c8d8;font-weight:500;">Нет роста и перспектив</span></div>
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;"><div style="width:36px;height:36px;border-radius:10px;background:rgba(255,80,80,0.1);border:1px solid rgba(255,80,80,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;color:#ff6b6b;flex-shrink:0;">✕</div><span style="font-size:21px;color:#c0c8d8;font-weight:500;">Потолок дохода</span></div>
+      <div style="display:flex;align-items:center;gap:14px;"><div style="width:36px;height:36px;border-radius:10px;background:rgba(255,80,80,0.1);border:1px solid rgba(255,80,80,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;color:#ff6b6b;flex-shrink:0;">✕</div><span style="font-size:21px;color:#c0c8d8;font-weight:500;">Зависимость от курса ₽</span></div>
     </div>
-    <div class="right">
-      <div class="label label-green">После SmartWorker</div>
-      <div class="emoji">🚀</div>
-      <div class="item"><div class="icon icon-green"><span class="check">✓</span></div><span>Доход $1 000–3 000/мес</span></div>
-      <div class="item"><div class="icon icon-green"><span class="check">✓</span></div><span>Работаешь из дома</span></div>
-      <div class="item"><div class="icon icon-green"><span class="check">✓</span></div><span>Клиенты из США и Европы</span></div>
-      <div class="item"><div class="icon icon-green"><span class="check">✓</span></div><span>Свободный график</span></div>
-      <div class="item"><div class="icon icon-green"><span class="check">✓</span></div><span>Оплата в долларах</span></div>
-      <div class="big-text" style="margin-top:28px;">Старт за <em>2–3 месяца</em></div>
+    <!-- RIGHT -->
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:60px 50px;background:#0A0F1C;position:relative;">
+      <div style="position:absolute;top:-100px;right:-80px;width:350px;height:350px;background:#37ca37;border-radius:50%;filter:blur(120px);opacity:0.12;"></div>
+      <div style="position:relative;z-index:2;">
+        <div style="display:inline-block;font-size:16px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;padding:8px 18px;border-radius:50px;background:rgba(55,202,55,0.12);border:1.5px solid rgba(55,202,55,0.3);color:#37ca37;margin-bottom:24px;">После SmartWorker</div>
+        <div style="font-size:64px;margin-bottom:20px;">🚀</div>
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;"><div style="width:36px;height:36px;border-radius:10px;background:rgba(55,202,55,0.1);border:1px solid rgba(55,202,55,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;color:#37ca37;flex-shrink:0;">✓</div><span style="font-size:21px;color:#c0c8d8;font-weight:500;">Доход $1 000–3 000/мес</span></div>
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;"><div style="width:36px;height:36px;border-radius:10px;background:rgba(55,202,55,0.1);border:1px solid rgba(55,202,55,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;color:#37ca37;flex-shrink:0;">✓</div><span style="font-size:21px;color:#c0c8d8;font-weight:500;">Работаешь из дома</span></div>
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;"><div style="width:36px;height:36px;border-radius:10px;background:rgba(55,202,55,0.1);border:1px solid rgba(55,202,55,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;color:#37ca37;flex-shrink:0;">✓</div><span style="font-size:21px;color:#c0c8d8;font-weight:500;">Клиенты из США и Европы</span></div>
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;"><div style="width:36px;height:36px;border-radius:10px;background:rgba(55,202,55,0.1);border:1px solid rgba(55,202,55,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;color:#37ca37;flex-shrink:0;">✓</div><span style="font-size:21px;color:#c0c8d8;font-weight:500;">Свободный график</span></div>
+        <div style="display:flex;align-items:center;gap:14px;"><div style="width:36px;height:36px;border-radius:10px;background:rgba(55,202,55,0.1);border:1px solid rgba(55,202,55,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;color:#37ca37;flex-shrink:0;">✓</div><span style="font-size:21px;color:#c0c8d8;font-weight:500;">Оплата в долларах</span></div>
+        <div style="font-weight:800;font-size:34px;color:#fff;letter-spacing:-0.02em;line-height:1.2;margin-top:28px;">Старт за <span style="color:#37ca37;">2–3 месяца</span></div>
+      </div>
     </div>
   </div>
-  <div class="bottom-bar">
-    <div class="logo"><span>Smart</span><span>Worker</span></div>
-    <div class="cta-small">Пройти отбор →</div>
+  <!-- Bottom bar -->
+  <div style="background:rgba(255,214,66,0.06);border-top:1px solid rgba(255,214,66,0.15);padding:24px 50px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;">
+    <div><span style="font-weight:900;font-size:32px;color:#fff;letter-spacing:-0.03em;">Smart</span><span style="font-weight:900;font-size:32px;color:#FFD642;letter-spacing:-0.03em;">Worker</span></div>
+    <div style="background:#FFD642;color:#0A0F1C;font-weight:800;font-size:20px;padding:16px 36px;border-radius:12px;">Пройти отбор →</div>
   </div>
+</div>
 </body>
 </html>

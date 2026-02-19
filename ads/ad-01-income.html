@@ -2,50 +2,35 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1000">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700;800;900&display=swap');
   *{margin:0;padding:0;box-sizing:border-box;}
-  body{width:1000px;height:1000px;overflow:hidden;font-family:'Inter Tight',sans-serif;background:#0A0F1C;position:relative;}
-
-  .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,214,66,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,214,66,0.04) 1px,transparent 1px);background-size:50px 50px;}
-  .glow1{position:absolute;top:-200px;right:-100px;width:600px;height:600px;background:#FFD642;border-radius:50%;filter:blur(180px);opacity:0.12;}
-  .glow2{position:absolute;bottom:-150px;left:-100px;width:500px;height:500px;background:#37ca37;border-radius:50%;filter:blur(160px);opacity:0.1;}
-
-  .content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;padding:80px 70px;text-align:center;}
-
-  .logo span:first-child{font-weight:900;font-size:42px;color:#fff;letter-spacing:-0.03em;}
-  .logo span:last-child{font-weight:900;font-size:42px;color:#FFD642;letter-spacing:-0.03em;}
-
-  .amount{font-weight:900;font-size:160px;letter-spacing:-0.04em;color:#FFD642;line-height:0.9;margin:30px 0 0;text-shadow:0 0 80px rgba(255,214,66,0.3);}
-  .currency{font-weight:900;font-size:72px;color:#FFD642;opacity:0.7;vertical-align:super;line-height:1;}
-  .per-month{font-size:38px;font-weight:700;color:#8893A8;margin-top:8px;letter-spacing:-0.02em;}
-
-  h1{font-weight:800;font-size:56px;color:#fff;letter-spacing:-0.03em;line-height:1.1;margin-top:32px;max-width:800px;}
-  h1 em{font-style:normal;color:#37ca37;}
-
-  .subtitle{font-size:24px;color:#8893A8;margin-top:20px;line-height:1.5;max-width:650px;}
-
-  .cta{margin-top:40px;background:#FFD642;color:#0A0F1C;font-weight:800;font-size:26px;padding:22px 56px;border-radius:16px;letter-spacing:-0.01em;box-shadow:0 0 60px rgba(255,214,66,0.3);}
-
-  .badge{display:inline-flex;align-items:center;gap:10px;background:rgba(55,202,55,0.12);border:1.5px solid rgba(55,202,55,0.3);border-radius:50px;padding:12px 24px;font-size:18px;color:#37ca37;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:10px;}
-  .badge .dot{width:10px;height:10px;background:#37ca37;border-radius:50%;animation:pulse 2s infinite;}
-
-  @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+  html,body{width:1000px;height:1000px;overflow:hidden;font-family:'Inter Tight',sans-serif;background:#0A0F1C;}
 </style>
 </head>
 <body>
-  <div class="grid"></div>
-  <div class="glow1"></div>
-  <div class="glow2"></div>
-  <div class="content">
-    <div class="logo"><span>Smart</span><span>Worker</span></div>
-    <div class="badge"><span class="dot"></span>Набор открыт</div>
-    <div class="amount"><span class="currency">$</span>3000</div>
-    <div class="per-month">в месяц из дома</div>
-    <h1>Работай на компании из <em>США</em>, живя где угодно</h1>
-    <p class="subtitle">Обучаем и трудоустраиваем за 2–3 месяца</p>
-    <div class="cta">Узнать подробнее →</div>
+<div style="width:1000px;height:1000px;position:relative;overflow:hidden;">
+  <!-- Background grid -->
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,214,66,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,214,66,0.04) 1px,transparent 1px);background-size:50px 50px;"></div>
+  <div style="position:absolute;top:-200px;right:-100px;width:600px;height:600px;background:#FFD642;border-radius:50%;filter:blur(180px);opacity:0.12;"></div>
+  <div style="position:absolute;bottom:-150px;left:-100px;width:500px;height:500px;background:#37ca37;border-radius:50%;filter:blur(160px);opacity:0.1;"></div>
+
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;width:1000px;height:1000px;padding:80px 70px;text-align:center;">
+    <div><span style="font-weight:900;font-size:42px;color:#fff;letter-spacing:-0.03em;">Smart</span><span style="font-weight:900;font-size:42px;color:#FFD642;letter-spacing:-0.03em;">Worker</span></div>
+
+    <div style="display:inline-flex;align-items:center;gap:10px;background:rgba(55,202,55,0.12);border:1.5px solid rgba(55,202,55,0.3);border-radius:50px;padding:12px 24px;font-size:18px;color:#37ca37;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-top:16px;">
+      <span style="width:10px;height:10px;background:#37ca37;border-radius:50%;display:inline-block;"></span>
+      Набор открыт
+    </div>
+
+    <div style="font-weight:900;font-size:160px;letter-spacing:-0.04em;color:#FFD642;line-height:0.9;margin-top:30px;text-shadow:0 0 80px rgba(255,214,66,0.3);"><span style="font-size:72px;vertical-align:super;opacity:0.7;line-height:1;">$</span>3000</div>
+    <div style="font-size:38px;font-weight:700;color:#8893A8;margin-top:8px;letter-spacing:-0.02em;">в месяц из дома</div>
+
+    <h1 style="font-weight:800;font-size:56px;color:#fff;letter-spacing:-0.03em;line-height:1.1;margin-top:32px;max-width:800px;">Работай на компании из <span style="color:#37ca37;">США</span>, живя где угодно</h1>
+    <p style="font-size:24px;color:#8893A8;margin-top:20px;line-height:1.5;max-width:650px;">Обучаем и трудоустраиваем за 2–3 месяца</p>
+
+    <div style="margin-top:40px;background:#FFD642;color:#0A0F1C;font-weight:800;font-size:26px;padding:22px 56px;border-radius:16px;box-shadow:0 0 60px rgba(255,214,66,0.3);">Узнать подробнее →</div>
   </div>
+</div>
 </body>
 </html>

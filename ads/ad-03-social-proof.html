@@ -2,61 +2,41 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1000">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700;800;900&display=swap');
   *{margin:0;padding:0;box-sizing:border-box;}
-  body{width:1000px;height:1000px;overflow:hidden;font-family:'Inter Tight',sans-serif;background:#0A0F1C;position:relative;}
-
-  .bg-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(55,202,55,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(55,202,55,0.03) 1px,transparent 1px);background-size:50px 50px;}
-  .glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:500px;background:#37ca37;border-radius:50%;filter:blur(200px);opacity:0.08;}
-
-  .content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;padding:70px;}
-
-  .logo{margin-bottom:30px;}
-  .logo span:first-child{font-weight:900;font-size:36px;color:#fff;letter-spacing:-0.03em;}
-  .logo span:last-child{font-weight:900;font-size:36px;color:#FFD642;letter-spacing:-0.03em;}
-
-  .big-number{font-weight:900;font-size:220px;letter-spacing:-0.05em;line-height:0.85;background:linear-gradient(180deg,#37ca37,#2a9d2a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:none;position:relative;}
-  .big-number::after{content:'';position:absolute;inset:-20px;background:rgba(55,202,55,0.08);filter:blur(40px);border-radius:50%;z-index:-1;}
-  .plus{font-size:140px;vertical-align:top;line-height:1;}
-
-  .label{font-size:46px;font-weight:800;color:#fff;letter-spacing:-0.02em;margin-top:10px;}
-  .label em{font-style:normal;color:#37ca37;}
-
-  .subtitle{font-size:26px;color:#8893A8;margin-top:20px;text-align:center;line-height:1.5;max-width:700px;}
-
-  .cards{display:flex;gap:20px;margin-top:40px;}
-  .card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:24px 28px;text-align:center;flex:1;}
-  .card-num{font-weight:900;font-size:42px;color:#FFD642;letter-spacing:-0.02em;}
-  .card-label{font-size:16px;color:#8893A8;margin-top:4px;line-height:1.3;}
-
-  .cta{margin-top:40px;background:#FFD642;color:#0A0F1C;font-weight:800;font-size:24px;padding:22px 52px;border-radius:14px;box-shadow:0 0 50px rgba(255,214,66,0.25);}
+  html,body{width:1000px;height:1000px;overflow:hidden;font-family:'Inter Tight',sans-serif;background:#0A0F1C;}
 </style>
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <div class="glow"></div>
-  <div class="content">
-    <div class="logo"><span>Smart</span><span>Worker</span></div>
-    <div class="big-number"><span class="plus">+</span>60</div>
-    <div class="label">учеников уже <em>работают</em></div>
-    <p class="subtitle">с компаниями из США, Канады и Европы — и зарабатывают в долларах удалённо</p>
-    <div class="cards">
-      <div class="card">
-        <div class="card-num">$1 500</div>
-        <div class="card-label">средний доход<br>ученика/мес</div>
+<div style="width:1000px;height:1000px;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(55,202,55,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(55,202,55,0.03) 1px,transparent 1px);background-size:50px 50px;"></div>
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:500px;background:#37ca37;border-radius:50%;filter:blur(200px);opacity:0.08;"></div>
+
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;width:1000px;height:1000px;padding:70px;text-align:center;">
+    <div><span style="font-weight:900;font-size:36px;color:#fff;letter-spacing:-0.03em;">Smart</span><span style="font-weight:900;font-size:36px;color:#FFD642;letter-spacing:-0.03em;">Worker</span></div>
+
+    <div style="font-weight:900;font-size:220px;letter-spacing:-0.05em;line-height:0.85;background:linear-gradient(180deg,#37ca37,#2a9d2a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-top:24px;"><span style="font-size:140px;vertical-align:top;line-height:1;">+</span>60</div>
+    <div style="font-size:46px;font-weight:800;color:#fff;letter-spacing:-0.02em;margin-top:10px;">учеников уже <span style="color:#37ca37;">работают</span></div>
+    <p style="font-size:26px;color:#8893A8;margin-top:16px;line-height:1.5;max-width:700px;">с компаниями из США, Канады и Европы — и зарабатывают в долларах удалённо</p>
+
+    <div style="display:flex;gap:20px;margin-top:36px;">
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:24px 28px;text-align:center;flex:1;">
+        <div style="font-weight:900;font-size:42px;color:#FFD642;">$1 500</div>
+        <div style="font-size:16px;color:#8893A8;margin-top:4px;line-height:1.3;">средний доход<br>ученика/мес</div>
       </div>
-      <div class="card">
-        <div class="card-num">2–3</div>
-        <div class="card-label">месяца до<br>первого клиента</div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:24px 28px;text-align:center;flex:1;">
+        <div style="font-weight:900;font-size:42px;color:#FFD642;">2–3</div>
+        <div style="font-size:16px;color:#8893A8;margin-top:4px;line-height:1.3;">месяца до<br>первого клиента</div>
       </div>
-      <div class="card">
-        <div class="card-num">93%</div>
-        <div class="card-label">учеников находят<br>работу</div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:24px 28px;text-align:center;flex:1;">
+        <div style="font-weight:900;font-size:42px;color:#FFD642;">93%</div>
+        <div style="font-size:16px;color:#8893A8;margin-top:4px;line-height:1.3;">учеников находят<br>работу</div>
       </div>
     </div>
-    <div class="cta">Стать следующим →</div>
+
+    <div style="margin-top:36px;background:#FFD642;color:#0A0F1C;font-weight:800;font-size:24px;padding:22px 52px;border-radius:14px;box-shadow:0 0 50px rgba(255,214,66,0.25);">Стать следующим →</div>
   </div>
+</div>
 </body>
 </html>
