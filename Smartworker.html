@@ -173,6 +173,21 @@ footer p{font-size:0.82rem;color:#555d6e}
 footer a{color:#8893A8;text-decoration:none;transition:color 0.3s}
 footer a:hover{color:#FFD642}
 
+/* === PROFESSIONS === */
+.prof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
+.prof-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:28px 22px;text-align:center;transition:all 0.3s ease}
+.prof-card:hover{border-color:rgba(255,214,66,0.2);transform:translateY(-4px);box-shadow:0 16px 50px rgba(0,0,0,0.3)}
+.prof-icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.6rem}
+.prof-icon.sales{background:linear-gradient(135deg,rgba(255,214,66,0.15),rgba(255,214,66,0.05));border:1px solid rgba(255,214,66,0.2)}
+.prof-icon.ea{background:linear-gradient(135deg,rgba(24,139,246,0.15),rgba(24,139,246,0.05));border:1px solid rgba(24,139,246,0.2)}
+.prof-icon.marketing{background:linear-gradient(135deg,rgba(55,202,55,0.15),rgba(55,202,55,0.05));border:1px solid rgba(55,202,55,0.2)}
+.prof-icon.smm{background:linear-gradient(135deg,rgba(168,85,247,0.15),rgba(168,85,247,0.05));border:1px solid rgba(168,85,247,0.2)}
+.prof-card h4{color:#fff;margin-bottom:8px;font-size:clamp(0.95rem,2vw,1.1rem)}
+.prof-card p{font-size:clamp(0.8rem,2vw,0.88rem);color:#8893A8;line-height:1.5}
+.prof-bottom{margin-top:40px;background:linear-gradient(135deg,rgba(55,202,55,0.06),rgba(255,214,66,0.06));border:1px solid rgba(55,202,55,0.12);border-radius:16px;padding:28px 32px;display:flex;align-items:center;gap:16px}
+.prof-bottom-icon{font-size:2rem;flex-shrink:0}
+.prof-bottom p{color:#c4cdd9;font-size:clamp(0.92rem,2.5vw,1.02rem);margin:0}
+
 .fade-up{opacity:0;transform:translateY(30px);transition:all 0.7s cubic-bezier(.25,.46,.45,.94)}
 .fade-up.visible{opacity:1;transform:translateY(0)}
 .fade-left{opacity:0;transform:translateX(-30px);transition:all 0.7s cubic-bezier(.25,.46,.45,.94)}
@@ -192,6 +207,7 @@ footer a:hover{color:#FFD642}
 /* === TABLET === */
 @media(max-width:900px){
   .about-grid,.story-card,.contrast-grid,.journey-grid{grid-template-columns:1fr}
+  .prof-grid{grid-template-columns:1fr 1fr}
   .story-card:nth-child(even){direction:ltr}
   .hero-stats{gap:24px}
   section{padding:60px 0}
@@ -222,6 +238,8 @@ footer a:hover{color:#FFD642}
   .story-video .play-btn{width:56px;height:56px}
   .story-video .play-btn::after{border-width:10px 0 10px 16px}
   .insights-grid{grid-template-columns:1fr}
+  .prof-grid{grid-template-columns:1fr}
+  .prof-bottom{flex-direction:column;text-align:center;padding:24px 20px}
   .step-grid{grid-template-columns:1fr 1fr}
   .dont-grid{grid-template-columns:1fr}
   .feature-list li{font-size:0.9rem}
@@ -313,6 +331,50 @@ footer a:hover{color:#FFD642}
       <p>Система SmartWorker подходит всем &mdash; и тем, у кого уже есть навыки, и тем, кто только начинает. Всё, что тебе нужно &mdash; <strong class="text-white">ноутбук, интернет и желание развиваться</strong>.</p>
       <div class="spacer-md"></div>
       <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-primary">Узнай, подходит ли тебе профессия виртуального ассистента</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== ПРОФЕССИИ ====== -->
+<section class="section-gradient">
+  <div class="container">
+    <div class="text-center fade-up" style="max-width:800px;margin:0 auto;">
+      <span class="float-tag">Нет навыков? Мы обучим</span>
+      <h2>Даже если у тебя <span class="gradient-text">нет опыта</span> &mdash; мы научим тебя востребованной профессии</h2>
+      <p style="margin-top:16px;">Тебе не нужно быть программистом или иметь диплом. В SmartWorker мы обучаем самым востребованным удалённым профессиям на рынке США с нуля:</p>
+    </div>
+
+    <div class="prof-grid fade-up">
+      <div class="prof-card">
+        <div class="prof-icon sales">&#128176;</div>
+        <h4>Remote Sales Closer</h4>
+        <p>Продавай продукты и услуги для американских компаний удалённо. Одна из самых высокооплачиваемых профессий на фрилансе.</p>
+      </div>
+      <div class="prof-card">
+        <div class="prof-icon ea">&#128203;</div>
+        <h4>Executive Assistant</h4>
+        <p>Организуй расписание, задачи и коммуникации для руководителей из США. Стабильная и востребованная профессия.</p>
+      </div>
+      <div class="prof-card">
+        <div class="prof-icon marketing">&#128200;</div>
+        <h4>Marketing Specialist</h4>
+        <p>Запускай рекламные кампании, email-рассылки и стратегии продвижения для зарубежных клиентов.</p>
+      </div>
+      <div class="prof-card">
+        <div class="prof-icon smm">&#128241;</div>
+        <h4>Social Media Manager</h4>
+        <p>Веди социальные сети, создавай контент и развивай бренды американских компаний.</p>
+      </div>
+    </div>
+
+    <div class="prof-bottom fade-up">
+      <div class="prof-bottom-icon">&#127919;</div>
+      <p>Даже если ни одна из этих профессий тебе пока не знакома &mdash; <strong class="text-white">это нормально</strong>. Мы обучаем всему с нуля: от навыков до первого клиента. Как минимум, ты уйдёшь с <strong class="text-gold">самыми востребованными навыками</strong>, которые откроют тебе двери на международный рынок труда.</p>
+    </div>
+
+    <div class="spacer-md"></div>
+    <div class="text-center">
+      <a href="https://app.leadershipmasteryint.com/v2/preview/nCvggw0Zw1Rpqufyy227?notrack=true" class="btn btn-primary">Узнай, какая профессия подходит тебе</a>
     </div>
   </div>
 </section>
