@@ -204,6 +204,31 @@ footer a:hover{color:#FFD642}
 .rounded-img{border-radius:20px;border:1px solid rgba(255,255,255,0.08);width:100%;height:auto;display:block}
 .journey-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
 
+/* === REVIEW BREAKS === */
+.review-break{padding:44px 0;position:relative;overflow:hidden}
+.review-break::before{content:'';position:absolute;top:0;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,214,66,0.12),transparent)}
+.review-portrait-card{display:flex;gap:28px;align-items:center;max-width:700px;margin:0 auto}
+.review-portrait-wrap{width:200px;min-width:200px;aspect-ratio:9/16;border-radius:16px;overflow:hidden;border:2px solid rgba(255,214,66,0.12);background:#111827;position:relative;flex-shrink:0}
+.review-portrait-wrap video,.review-portrait-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+.review-portrait-text h4{color:#fff;margin-bottom:8px;font-size:clamp(1rem,2.5vw,1.2rem)}
+.review-portrait-text p{color:#c4cdd9;font-size:clamp(0.88rem,2.2vw,0.98rem);margin-bottom:10px}
+.review-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(55,202,55,0.1);border:1px solid rgba(55,202,55,0.2);color:#37ca37;padding:4px 12px;border-radius:8px;font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:12px}
+.review-duo{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:820px;margin:0 auto}
+.review-duo-card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:24px;text-align:center;transition:all 0.3s}
+.review-duo-card:hover{border-color:rgba(255,214,66,0.15);transform:translateY(-3px)}
+.review-duo-video{width:160px;aspect-ratio:9/16;border-radius:12px;overflow:hidden;margin:0 auto 14px;background:#111827;border:1px solid rgba(255,255,255,0.08)}
+.review-duo-video video{width:100%;height:100%;object-fit:cover;display:block}
+.review-duo-card h4{color:#fff;margin-bottom:6px;font-size:clamp(0.95rem,2vw,1.05rem)}
+.review-duo-card p{font-size:clamp(0.82rem,2vw,0.88rem);color:#8893A8}
+.telegram-reviews{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;align-items:flex-start;max-width:900px;margin:0 auto}
+.telegram-reviews img{border-radius:10px;border:1px solid rgba(255,255,255,0.08);height:auto;max-width:260px;transition:transform 0.3s}
+.telegram-reviews img:hover{transform:scale(1.03)}
+.review-image-showcase{max-width:520px;margin:0 auto;text-align:center}
+.review-image-showcase img{border-radius:16px;border:2px solid rgba(255,214,66,0.12);max-width:100%;height:auto;margin-bottom:14px;transition:transform 0.3s}
+.review-image-showcase img:hover{transform:scale(1.02)}
+.review-image-showcase h4{color:#fff;margin-bottom:6px}
+.review-image-showcase p{color:#c4cdd9;font-size:clamp(0.88rem,2.2vw,0.95rem)}
+
 /* === TABLET === */
 @media(max-width:900px){
   .about-grid,.story-card,.contrast-grid,.journey-grid{grid-template-columns:1fr}
@@ -217,6 +242,8 @@ footer a:hover{color:#FFD642}
   .about-grid{gap:36px}
   .stories-grid{gap:50px}
   .story-card{gap:30px}
+  .review-portrait-card{max-width:600px}
+  .review-duo{gap:20px}
 }
 
 /* === MOBILE === */
@@ -248,6 +275,12 @@ footer a:hover{color:#FFD642}
   .cta-card{padding:36px 20px}
   .bg-glow-gold{width:250px;height:250px}
   .bg-glow-green{width:200px;height:200px}
+  .review-portrait-card{flex-direction:column;text-align:center}
+  .review-portrait-wrap{width:180px;min-width:180px;margin:0 auto}
+  .review-duo{grid-template-columns:1fr}
+  .review-duo-video{width:140px}
+  .telegram-reviews img{max-width:200px}
+  .review-break{padding:36px 0}
 }
 
 @media(max-width:380px){
@@ -296,6 +329,24 @@ footer a:hover{color:#FFD642}
   </div>
 </section>
 
+<!-- ====== REVIEW: Зара ====== -->
+<section class="review-break section-gradient">
+  <div class="container">
+    <div class="review-portrait-card fade-up">
+      <div class="review-portrait-wrap">
+        <video controls playsinline preload="metadata">
+          <source src="https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/699758ba2a2f15048efe69fc.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="review-portrait-text">
+        <span class="review-tag">Результат ученицы</span>
+        <h4>Зара, 19 лет &mdash; Казахстан</h4>
+        <p>Зарабатывает как виртуальный ассистент, работая на американского коуча. Начала без опыта &mdash; сейчас стабильно получает оплату в долларах.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ====== О SMARTWORKER ====== -->
 <section class="section-gradient">
   <div class="container">
@@ -319,6 +370,17 @@ footer a:hover{color:#FFD642}
   </div>
 </section>
 
+<!-- ====== REVIEW: Telegram отзывы ====== -->
+<section class="review-break section-dark">
+  <div class="container text-center fade-up">
+    <p class="text-muted" style="margin-bottom:18px;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;font-weight:600;">Отзывы наших учеников</p>
+    <div class="telegram-reviews">
+      <img src="https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/69975abe4c2502020197917f.jpg" alt="Отзыв в Telegram" loading="lazy">
+      <img src="https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/69975abe4c2502004997918d.jpg" alt="Отзыв в Telegram" loading="lazy">
+    </div>
+  </div>
+</section>
+
 <!-- ====== ПОТЕНЦИАЛ ДОХОДА ====== -->
 <section class="section-navy">
   <div class="container text-center">
@@ -331,6 +393,24 @@ footer a:hover{color:#FFD642}
       <p>Система SmartWorker подходит всем &mdash; и тем, у кого уже есть навыки, и тем, кто только начинает. Всё, что тебе нужно &mdash; <strong class="text-white">ноутбук, интернет и желание развиваться</strong>.</p>
       <div class="spacer-md"></div>
       <a href="https://smartworkers.kz/2" class="btn btn-primary">Узнай, подходит ли тебе профессия виртуального ассистента</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== REVIEW: Диас ====== -->
+<section class="review-break section-dark">
+  <div class="container">
+    <div class="review-portrait-card fade-up">
+      <div class="review-portrait-wrap">
+        <video controls playsinline preload="metadata">
+          <source src="https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/699758ba8523c52689ce6e07.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="review-portrait-text">
+        <span class="review-tag">Офер в первый месяц</span>
+        <h4>Диас &mdash; Казахстан</h4>
+        <p>Получил офер от американской компании в первый месяц использования системы SmartWorker. Направление &mdash; графический дизайн.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -375,6 +455,32 @@ footer a:hover{color:#FFD642}
     <div class="spacer-md"></div>
     <div class="text-center">
       <a href="https://smartworkers.kz/2" class="btn btn-primary">Узнай, какая профессия подходит тебе</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== REVIEW: Alibek + Амир ====== -->
+<section class="review-break section-navy">
+  <div class="container">
+    <div class="review-duo fade-up">
+      <div class="review-duo-card">
+        <div class="review-duo-video">
+          <video controls playsinline preload="metadata">
+            <source src="https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/699758ba2a2f156784fe69fa.mov">
+          </video>
+        </div>
+        <h4>Alibek</h4>
+        <p>Работает онлайн продавцом в маркетинговой компании США. Получил офер за 3 дня.</p>
+      </div>
+      <div class="review-duo-card">
+        <div class="review-duo-video">
+          <video controls playsinline preload="metadata">
+            <source src="https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/699758bb2a2f15fbc9fe6a0d.mp4" type="video/mp4">
+          </video>
+        </div>
+        <h4>Амир</h4>
+        <p>Работает графическим дизайнером в двух компаниях &mdash; маркетинг и eCommerce.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -497,17 +603,14 @@ footer a:hover{color:#FFD642}
       <!-- СЛАВА -->
       <div class="story-card fade-up">
         <div class="story-video" id="video-slava">
-          <button class="play-btn" aria-label="Воспроизвести видео"></button>
-          <span class="video-label">Видео скоро</span>
-          <!-- Для YouTube видео вставьте iframe:
-               <iframe src="https://www.youtube.com/embed/VIDEO_ID" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          -->
+          <video controls playsinline preload="metadata" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:3;">
+            <source src="https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/699758bb3ff516a6f4521296.mp4" type="video/mp4">
+          </video>
         </div>
         <div class="story-text">
-          <h3>История Славы &mdash; <span class="text-gold">Директор по дизайну во Флориде</span></h3>
-          <p>Слава уже второй год работает <strong class="text-white">директором по дизайну</strong> в маркетинговом агентстве, расположенном во Флориде. Ему всего <strong class="text-white">27 лет</strong>.</p>
-          <p>Средняя зарплата дизайнера в США составляет около <span class="highlight-stat">$65&nbsp;000/год</span>, и Слава уже вплотную к этой планке. Сейчас он берёт проекты, где ставка достигает <strong class="text-gold">$30&ndash;$40 в час</strong>.</p>
-          <p>Он доказал, что даже находясь за пределами США, можно построить успешную международную карьеру, если знать, как себя презентовать и работать с клиентами грамотно.</p>
+          <h3>История Славы &mdash; <span class="text-gold">Руководитель маркетингового отдела</span></h3>
+          <p>Слава начал с графического дизайна в компании по ведению брендов на Amazon. Сейчас он является <strong class="text-white">руководителем маркетингового отдела</strong> уже <strong class="text-gold">3 года</strong>.</p>
+          <p>Он доказал, что даже находясь за пределами США, можно построить успешную международную карьеру &mdash; от рядового дизайнера до руководителя целого направления.</p>
           <a href="https://smartworkers.kz/2" class="btn btn-secondary" style="margin-top:8px;">Пройти квалификацию</a>
         </div>
       </div>
@@ -517,15 +620,11 @@ footer a:hover{color:#FFD642}
         <div class="story-video" id="video-alina">
           <button class="play-btn" aria-label="Воспроизвести видео"></button>
           <span class="video-label">Видео скоро</span>
-          <!-- Для YouTube видео вставьте iframe:
-               <iframe src="https://www.youtube.com/embed/VIDEO_ID" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          -->
         </div>
         <div class="story-text">
-          <h3>История Алины &mdash; <span class="text-green">Международная карьера в 22 года</span></h3>
-          <p>Познакомьтесь, это Алина. Ей всего <strong class="text-white">22 года</strong>, она живёт и учится в Италии. Ещё пару лет назад Алина обратилась к нам с целью найти <strong class="text-white">удалённую работу в США</strong>.</p>
-          <p>С помощью системы SmartWorker мы помогли ей подготовиться к собеседованию, и вскоре она получила предложение от <strong class="text-white">американского бизнес-коуча</strong>, где теперь работает в отделе продаж.</p>
-          <p>Сегодня её доход составляет около <span class="highlight-stat">$1&nbsp;280/мес</span> &mdash; и она продолжает профессионально расти, улучшая свой английский и получая международный опыт.</p>
+          <h3>История Алины &mdash; <span class="text-green">Фулл-тайм работа с компаниями из США</span></h3>
+          <p>Алина работает <strong class="text-white">продавцом в руфинг компании</strong> из США, а также параллельно работает в <strong class="text-white">колл-центре</strong> &mdash; в общей сложности это полноценная фулл-тайм занятость.</p>
+          <p>Она доказала, что можно совмещать несколько направлений работы с американскими компаниями и получать <strong class="text-gold">стабильный доход в долларах</strong>, находясь в любой точке мира.</p>
           <a href="https://smartworkers.kz/2" class="btn btn-secondary" style="margin-top:8px;">Записаться на консультацию</a>
         </div>
       </div>
@@ -580,6 +679,21 @@ footer a:hover{color:#FFD642}
   </div>
 </section>
 
+<!-- ====== REVIEW: Адель + Telegram ====== -->
+<section class="review-break section-gradient">
+  <div class="container text-center fade-up">
+    <div class="review-image-showcase" style="margin-bottom:30px;">
+      <img src="https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/699758bb3ff516ea8e521294.jpg" alt="Адель — офер на графического дизайнера" loading="lazy">
+      <h4>Адель</h4>
+      <p>Получила офер на позицию графического дизайнера</p>
+    </div>
+    <div class="telegram-reviews">
+      <img src="https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/69975abe8d5b5a7c7a8208ed.jpg" alt="Отзыв в Telegram" loading="lazy">
+      <img src="https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/69975abe8d5b5a144f8208e9.jpg" alt="Отзыв в Telegram" loading="lazy">
+    </div>
+  </div>
+</section>
+
 <!-- ====== СУТЬ ====== -->
 <section class="section-navy">
   <div class="container">
@@ -629,6 +743,22 @@ footer a:hover{color:#FFD642}
     <div class="spacer-md"></div>
     <div class="text-center">
       <a href="https://smartworkers.kz/2" class="btn btn-primary">Пройти тест и получить рекомендации</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== REVIEW: Диар ====== -->
+<section class="review-break section-dark">
+  <div class="container">
+    <div class="review-portrait-card fade-up">
+      <div class="review-portrait-wrap">
+        <img src="https://assets.cdn.filesafe.space/mk59cRoNiTQPsvDY71Gj/media/699758ba18171509bfa4ac8a.jpg" alt="Диар — 11 интервью за 6 недель" loading="lazy">
+      </div>
+      <div class="review-portrait-text">
+        <span class="review-tag">11 интервью за 6 недель</span>
+        <h4>Диар</h4>
+        <p>Получил 11 интервью за 6 недель использования системы и офер на <strong class="text-gold">$3&nbsp;000</strong> от компании из США.</p>
+      </div>
     </div>
   </div>
 </section>
