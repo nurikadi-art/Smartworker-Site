@@ -29,8 +29,9 @@ IMAGE DIRECTION:
               'I want to sit in an office for 40 years.'")
     Option B: "Your 9-to-5 was supposed to be temporary.
               Remember?"
-    Option C: "What if your commute tomorrow
-              was just walking to your laptop?"
+    Option C: "I used to work 10-hour days for $400/month.
+              Then I found out American companies pay $22/hour
+              for the same work — remotely."
 
 PRIMARY TEXT — Variation 1:
 You didn't dream of this life.
